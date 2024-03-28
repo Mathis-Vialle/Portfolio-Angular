@@ -1,0 +1,45 @@
+.nav {
+  position: fixed;
+  width: 1024px;
+  display: flex;
+  justify-content: flex-end;
+  mix-blend-mode: difference;
+}
+
+.nav-container {
+  display: flex;
+  padding: 16px 26px;
+  gap: 34px;
+  align-items: center;
+  width: fit-content;
+  border-radius: 100px;
+  background: rgb(225, 225, 225);
+  background: linear-gradient(
+    90deg,
+    rgba(225, 225, 225, 0.4) 0%,
+    rgba(225, 225, 225, 0.1) 100%
+  );
+  -webkit-box-shadow: 4px 8px 24px -1px rgba(0, 0, 0, 0.02);
+  box-shadow: 4px 8px 24px -1px rgba(0, 0, 0, 0.02);
+  backdrop-filter: blur(40px);
+}
+
+.nav-item {
+  font-size: 16px;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  select {
+    border: none;
+    background: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    option {
+      color: #1e1e1e;
+    }
+  }
+}

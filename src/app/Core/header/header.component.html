@@ -1,0 +1,18 @@
+<nav class="nav">
+  <div class="nav-container">
+    <div class="nav-item">
+      <a routerLink="">HOME</a>
+    </div>
+    @for (navItem of navItems; track navItem.id) {
+    <div class="nav-item">
+      <a routerLink="{{ navItem.url }}"> {{ navItem.text | uppercase }}</a>
+    </div>
+    }
+    <div class="nav-item">
+      <select name="localeSelect" id="locale" title="localeSelect">
+        <option value="eng" [defaultSelected]="true">ENG</option>
+        <option value="fr">FR</option>
+      </select>
+    </div>
+  </div>
+</nav>
