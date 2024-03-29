@@ -1,12 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 * {
-  font-family: Roboto, Helvetica, sans-serif;
+  font-family: "Urbanist", Helvetica, sans-serif;
 }
 
 body {
   padding: 0;
   margin: 0;
   background: #1e1e1e;
+  scroll-behavior: smooth;
 }
 
 .content-container {

@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
-import { NavItem } from '../models/navItem.model';
+import { NavItem } from '../../models/navItem.model';
 
 @Component({
   selector: 'app-header',
@@ -21,12 +21,12 @@ export class HeaderComponent implements OnInit {
         url: 'about',
       },
       {
-        id: 1,
+        id: 2,
         text: 'Portfolio',
         url: 'portfolio',
       },
       {
-        id: 1,
+        id: 3,
         text: 'Contact',
         url: 'contact',
       },
