@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './Core/header/header.component';
-import { LandingPageComponent } from './Components/landing-page/landing-page.component';
+import { LandingPageComponent } from './pages/landing-page/landing-page.component';
 
 @Component({
   selector: 'app-root',
@@ -11,5 +11,5 @@ import { LandingPageComponent } from './Components/landing-page/landing-page.com
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  title = 'Portfolio';
+  title = 'Mathis Vialle';
 }
