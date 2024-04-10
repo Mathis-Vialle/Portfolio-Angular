@@ -1,16 +1,10 @@
-<nav class="nav">
-  <div class="nav-container">
-    <a class="nav-item" routerLink="" routerLinkActive="active">HOME</a>
-    @for (navItem of navItems; track navItem.id) {
-    <a routerLink="{{ navItem.url }}" class="nav-item">
-      {{ navItem.text | uppercase }}</a
-    >
-    }
-    <!-- <div class="nav-item">
-      <select name="localeSelect" id="locale" title="Locale selection">
-        <option value="eng" [defaultSelected]="true">ENG</option>
-        <option value="fr">FR</option>
-      </select>
-    </div> -->
+<div class="nav-container">
+  <div class="fixed">
+    <div class="navbar">
+      <a routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="nav-item">HOME</a>
+      @for (navItem of navItems; track navItem.id) {
+      <a routerLink="{{ navItem.url }}" routerLinkActive="active" class="nav-item"> {{ navItem.text | uppercase }} </a>
+      }
+    </div>
   </div>
-</nav>
+</div>

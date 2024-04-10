@@ -1,24 +1,32 @@
-.title-screen-container {
+.title-screen {
   width: 100%;
   height: calc(100vh - 32px);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  color: white;
-  gap: 56px;
   position: relative;
 
-  .title {
-    font-family: "Abril Fatface", serif;
-    font-size: 120px;
-    font-weight: 400;
-    margin: 0;
-  }
+  .title-screen-container {
 
-  .subtitle {
-    font-size: 40px;
-    margin: 0;
-    margin-left: 24px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    gap: 56px;
+
+    .title {
+      font-family: "Abril Fatface", serif;
+      font-size: 120px;
+      font-weight: 400;
+      margin: 0;
+      line-height: 0.8;
+    }
+
+    .subtitle {
+      font-size: 40px;
+      font-weight: 400;
+      margin: 0;
+      margin-left: 24px;
+    }
+
   }
 
   .scroll-downs {
@@ -34,6 +42,7 @@
 
     span {
       font-size: 18px;
+      color: white;
     }
 
     .mousey {
@@ -61,14 +70,17 @@
       0% {
         opacity: 0;
       }
+
       20% {
         transform: translateY(0);
         opacity: 1;
       }
+
       70% {
         transform: translateY(25px);
         opacity: 0;
       }
+
       100% {
         transform: translateY(25px);
         opacity: 0;
