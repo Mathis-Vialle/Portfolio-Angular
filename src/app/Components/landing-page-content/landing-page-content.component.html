@@ -1,6 +1,82 @@
-<div class="lp-content-container">
+<div class="lp-content">
   <span class="lp-content-bg"></span>
-  <div class="content-container lp-content-core">
-    <h2 class="lp-left-title"> {{ lpLeftTitle | uppercase }} </h2>
+  <div class="content-container">
+    <div class="lp-content-core">
+      <h2 class="side-title">
+        RECENT <br />
+        PROJECTS
+      </h2>
+      <div class="projects-container">
+        <ul class="projects-list">
+          <li class="list-item">Lorem Ipsum</li>
+          <li class="list-item">Lorem Ipsum</li>
+          <li class="list-item">Lorem Ipsum</li>
+          <li class="list-item">Lorem Ipsum</li>
+          <li class="list-item">Lorem Ipsum</li>
+        </ul>
+      </div>
+    </div>
+    <div class="lp-content-core">
+      <h2 class="side-title">
+        LET'S WORK <br />
+        TOGETHER
+      </h2>
+      <form [formGroup]="contactForm" class="form">
+        <div class="form-row">
+          <input
+            type="text"
+            name="firstName"
+            formControlName="firstName"
+            placeholder="First name"
+            class="form-cell"
+          />
+          <input
+            type="text"
+            name="lastName"
+            formControlName="lastName"
+            placeholder="Last name"
+            class="form-cell"
+          />
+        </div>
+        <div class="form-row">
+          <input
+            type="email"
+            name="email"
+            formControlName="email"
+            placeholder="Email"
+            class="form-cell"
+          />
+        </div>
+        <div class="form-row">
+          <input
+            type="text"
+            name="subject"
+            formControlName="subject"
+            placeholder="Subject"
+            class="form-cell"
+          />
+        </div>
+        <div class="form-row">
+          <textarea
+            name="message"
+            formControlName="message"
+            placeholder="Message"
+            class="form-cell"
+            rows="10"
+          ></textarea>
+        </div>
+        <button
+          type="submit"
+          [ngClass]="
+            contactForm.valid ? 'form-submit-valid' : 'form-submit-false'
+          "
+          class="form-submit"
+          (click)="onSubmit()"
+          [disabled]="!contactForm.valid"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
   </div>
 </div>

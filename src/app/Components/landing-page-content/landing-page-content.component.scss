@@ -1,9 +1,8 @@
-.lp-content-container {
+.lp-content {
   position: relative;
   margin: auto;
-  min-height: 1024px;
 
-  .lp-content-bg {
+  &-bg {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -14,15 +13,85 @@
     border-radius: 24px 24px 0 0;
   }
 
-  .lp-content-core {
+  &-core {
     display: flex;
+    width: 100%;
+    height: 1024px;
     justify-content: space-between;
+    align-items: center;
 
-    .lp-left-title {
+    .side-title {
       font-family: "Abril Fatface", serif;
       font-size: 128px;
       font-weight: 400;
-      rotate: -90deg;
+      writing-mode: vertical-rl;
+      transform: scale(-1);
+      margin: 0;
+      padding: 0;
+    }
+
+    // .projects {
+    //   &-container {
+    //   }
+
+    //   &-list {
+    //     list-style: none;
+
+    //     .list-item {
+    //     }
+    //   }
+    // }
+
+    .form {
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+
+      &-row {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 16px;
+        gap: 64px;
+        max-width: 464px;
+      }
+
+      &-cell {
+        padding: 16px;
+        font-size: 16px;
+        color: #555;
+        border: 1px solid black;
+        width: 100%;
+      }
+
+      input {
+        border-radius: 40px;
+      }
+
+      textarea {
+        border-radius: 25px;
+        resize: none;
+      }
+
+      &-submit {
+        border-radius: 40px;
+        font-size: 16px;
+        padding: 16px;
+        width: 200px;
+        border: none;
+        transition: all 0.2s ease-in-out;
+
+        &-false {
+          background-color: lightgrey;
+          color: grey;
+        }
+
+        &-valid {
+          background-color: #1e1e1e;
+          color: #e1e1e1;
+          cursor: pointer;
+        }
+      }
     }
   }
 }
