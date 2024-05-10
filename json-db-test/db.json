@@ -1,0 +1,202 @@
+{
+  "nav-items": [
+    {
+      "id": 1,
+      "text": "About",
+      "url": "about"
+    },
+    {
+      "id": 2,
+      "text": "Portfolio",
+      "url": "portfolio"
+    },
+    {
+      "id": 3,
+      "text": "Contact",
+      "url": "contact"
+    }
+  ],
+  "techs": [
+    {
+      "id": 1,
+      "name": "angular",
+      "icon": "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAOaSURBVHgB7ZnNUdtAFMefTRguMDE3DoBFB3SAUgF0gDuAVGBRQUwFmA6ggpgOSAXZgA++RbF9sj12/s+WNJtF+6GVzEwG/2Y80no/9N7u+1itiDZs2PBfU6M1EARBYz6fX9dqtbPFYtHAX516vf4kAFVMZQokQl9C6AsIHea1wf891HerVKaUAiw0LqcQrI3fKe4brn2hyAP6PLy8vNxTCbwUgOAhZvscty0qILSGGL8HjHff7/d7VBBnBRKhQ9xekbvQIu1eoH0PJnYLC3t26WBUQHHGkIrTopWyHSqOoJXzP5r8RavA8fFxG5eI/BGw75NkEn5SCVND/xuYV5RXVzf0K2XbHHH4isljG/dZgQxYwGddnUkBQSWYTqc32UNg01QCKCB0dVoFMIO/yBP07Q4GA5GWeRU4ZJIn6Ct0dVoFtra2BHkiz740nvcqQIFYV2cyoZj8HtaTZz8Fq8BZuEcejMfjH7o6rQJJ6PJRInPYgEMQSMtQ4IY8iIGuzrQCy75UDPH6+vqYFhD+2ru7u1dZJVaBigcHY0IzKmDyfg2RUg4Rga7lVQBdKoDJ/pm6pbMgd4S8MTs6OmrRagvR2NvbO8seuAqpzitrm0SbCQlyRA2TEPRSKl5nAxZPbMJUaVsB51yA0JmFSXZeee+EWQwPDw+zcsHEJkyVlTixmrjYedU2UOI8k6hAYsNYwlRvVADJx2lLKycunn1cLtQ2UKAlO7NrYoOif0z1Ltvp32R+QA+h8wt50Gw2v9u26cPhcN87DyQOZzQjCBCRJw6JLTYJz9h8YDmIoU5gn/5EniSJzTg+Wfhka4BZesYsB5rqSC5w7Ef7JpmJkS9k+++Q5sXJlsQYqwKGQf5JXOy88Jc7cgC+fJ+aBodUfm2l/BcoaxBxMSGR9yce2lXKbXJE2R9pExtW07oCVgV0yWw2m6nnOSE5wvsjpawLqYJsY9ka5L3YqIlL2ve40pAzM69C3ruCLYkxXiakvnEp+x4nIHBbKb8Jqdvb24Js45ADOGLhY5GA3heOVvu2Ri4rQJPJhDNtRO9DDNOJkIFPXBoXOhs9ODgIsKxt3tfQGmDfYvPMe6fW4XW4y4rs7OzceR43voH3U7wl8cnqpY7Xk8zLzhiQHwLm0iqzHankA4eHIks7h+ClTuyYqr/QcIaNDM1Y8A7OeW5tu0xXKv9GpnN0dtDRaPS1KsFT1vKRj0kU+Ybbhq+Dbtiw4QPwF7hf5Kkjy8aBAAAAAElFTkSuQmCC",
+      "type": "framework",
+      "learning": true
+    },
+    {
+      "id": 2,
+      "name": "react",
+      "icon": "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAOaSURBVHgB7ZnNUdtAFMefTRguMDE3DoBFB3SAUgF0gDuAVGBRQUwFmA6ggpgOSAXZgA++RbF9sj12/s+WNJtF+6GVzEwG/2Y80no/9N7u+1itiDZs2PBfU6M1EARBYz6fX9dqtbPFYtHAX516vf4kAFVMZQokQl9C6AsIHea1wf891HerVKaUAiw0LqcQrI3fKe4brn2hyAP6PLy8vNxTCbwUgOAhZvscty0qILSGGL8HjHff7/d7VBBnBRKhQ9xekbvQIu1eoH0PJnYLC3t26WBUQHHGkIrTopWyHSqOoJXzP5r8RavA8fFxG5eI/BGw75NkEn5SCVND/xuYV5RXVzf0K2XbHHH4isljG/dZgQxYwGddnUkBQSWYTqc32UNg01QCKCB0dVoFMIO/yBP07Q4GA5GWeRU4ZJIn6Ct0dVoFtra2BHkiz740nvcqQIFYV2cyoZj8HtaTZz8Fq8BZuEcejMfjH7o6rQJJ6PJRInPYgEMQSMtQ4IY8iIGuzrQCy75UDPH6+vqYFhD+2ru7u1dZJVaBigcHY0IzKmDyfg2RUg4Rga7lVQBdKoDJ/pm6pbMgd4S8MTs6OmrRagvR2NvbO8seuAqpzitrm0SbCQlyRA2TEPRSKl5nAxZPbMJUaVsB51yA0JmFSXZeee+EWQwPDw+zcsHEJkyVlTixmrjYedU2UOI8k6hAYsNYwlRvVADJx2lLKycunn1cLtQ2UKAlO7NrYoOif0z1Ltvp32R+QA+h8wt50Gw2v9u26cPhcN87DyQOZzQjCBCRJw6JLTYJz9h8YDmIoU5gn/5EniSJzTg+Wfhka4BZesYsB5rqSC5w7Ef7JpmJkS9k+++Q5sXJlsQYqwKGQf5JXOy88Jc7cgC+fJ+aBodUfm2l/BcoaxBxMSGR9yce2lXKbXJE2R9pExtW07oCVgV0yWw2m6nnOSE5wvsjpawLqYJsY9ka5L3YqIlL2ve40pAzM69C3ruCLYkxXiakvnEp+x4nIHBbKb8Jqdvb24Js45ADOGLhY5GA3heOVvu2Ri4rQJPJhDNtRO9DDNOJkIFPXBoXOhs9ODgIsKxt3tfQGmDfYvPMe6fW4XW4y4rs7OzceR43voH3U7wl8cnqpY7Xk8zLzhiQHwLm0iqzHankA4eHIks7h+ClTuyYqr/QcIaNDM1Y8A7OeW5tu0xXKv9GpnN0dtDRaPS1KsFT1vKRj0kU+Ybbhq+Dbtiw4QPwF7hf5Kkjy8aBAAAAAElFTkSuQmCC",
+      "type": "framework",
+      "learning": false
+    },
+    {
+      "id": 3,
+      "name": "nextJS",
+      "icon": "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAOaSURBVHgB7ZnNUdtAFMefTRguMDE3DoBFB3SAUgF0gDuAVGBRQUwFmA6ggpgOSAXZgA++RbF9sj12/s+WNJtF+6GVzEwG/2Y80no/9N7u+1itiDZs2PBfU6M1EARBYz6fX9dqtbPFYtHAX516vf4kAFVMZQokQl9C6AsIHea1wf891HerVKaUAiw0LqcQrI3fKe4brn2hyAP6PLy8vNxTCbwUgOAhZvscty0qILSGGL8HjHff7/d7VBBnBRKhQ9xekbvQIu1eoH0PJnYLC3t26WBUQHHGkIrTopWyHSqOoJXzP5r8RavA8fFxG5eI/BGw75NkEn5SCVND/xuYV5RXVzf0K2XbHHH4isljG/dZgQxYwGddnUkBQSWYTqc32UNg01QCKCB0dVoFMIO/yBP07Q4GA5GWeRU4ZJIn6Ct0dVoFtra2BHkiz740nvcqQIFYV2cyoZj8HtaTZz8Fq8BZuEcejMfjH7o6rQJJ6PJRInPYgEMQSMtQ4IY8iIGuzrQCy75UDPH6+vqYFhD+2ru7u1dZJVaBigcHY0IzKmDyfg2RUg4Rga7lVQBdKoDJ/pm6pbMgd4S8MTs6OmrRagvR2NvbO8seuAqpzitrm0SbCQlyRA2TEPRSKl5nAxZPbMJUaVsB51yA0JmFSXZeee+EWQwPDw+zcsHEJkyVlTixmrjYedU2UOI8k6hAYsNYwlRvVADJx2lLKycunn1cLtQ2UKAlO7NrYoOif0z1Ltvp32R+QA+h8wt50Gw2v9u26cPhcN87DyQOZzQjCBCRJw6JLTYJz9h8YDmIoU5gn/5EniSJzTg+Wfhka4BZesYsB5rqSC5w7Ef7JpmJkS9k+++Q5sXJlsQYqwKGQf5JXOy88Jc7cgC+fJ+aBodUfm2l/BcoaxBxMSGR9yce2lXKbXJE2R9pExtW07oCVgV0yWw2m6nnOSE5wvsjpawLqYJsY9ka5L3YqIlL2ve40pAzM69C3ruCLYkxXiakvnEp+x4nIHBbKb8Jqdvb24Js45ADOGLhY5GA3heOVvu2Ri4rQJPJhDNtRO9DDNOJkIFPXBoXOhs9ODgIsKxt3tfQGmDfYvPMe6fW4XW4y4rs7OzceR43voH3U7wl8cnqpY7Xk8zLzhiQHwLm0iqzHankA4eHIks7h+ClTuyYqr/QcIaNDM1Y8A7OeW5tu0xXKv9GpnN0dtDRaPS1KsFT1vKRj0kU+Ybbhq+Dbtiw4QPwF7hf5Kkjy8aBAAAAAElFTkSuQmCC",
+      "type": "framework",
+      "learning": false
+    },
+    {
+      "id": 4,
+      "name": "vueJS",
+      "icon": "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAOaSURBVHgB7ZnNUdtAFMefTRguMDE3DoBFB3SAUgF0gDuAVGBRQUwFmA6ggpgOSAXZgA++RbF9sj12/s+WNJtF+6GVzEwG/2Y80no/9N7u+1itiDZs2PBfU6M1EARBYz6fX9dqtbPFYtHAX516vf4kAFVMZQokQl9C6AsIHea1wf891HerVKaUAiw0LqcQrI3fKe4brn2hyAP6PLy8vNxTCbwUgOAhZvscty0qILSGGL8HjHff7/d7VBBnBRKhQ9xekbvQIu1eoH0PJnYLC3t26WBUQHHGkIrTopWyHSqOoJXzP5r8RavA8fFxG5eI/BGw75NkEn5SCVND/xuYV5RXVzf0K2XbHHH4isljG/dZgQxYwGddnUkBQSWYTqc32UNg01QCKCB0dVoFMIO/yBP07Q4GA5GWeRU4ZJIn6Ct0dVoFtra2BHkiz740nvcqQIFYV2cyoZj8HtaTZz8Fq8BZuEcejMfjH7o6rQJJ6PJRInPYgEMQSMtQ4IY8iIGuzrQCy75UDPH6+vqYFhD+2ru7u1dZJVaBigcHY0IzKmDyfg2RUg4Rga7lVQBdKoDJ/pm6pbMgd4S8MTs6OmrRagvR2NvbO8seuAqpzitrm0SbCQlyRA2TEPRSKl5nAxZPbMJUaVsB51yA0JmFSXZeee+EWQwPDw+zcsHEJkyVlTixmrjYedU2UOI8k6hAYsNYwlRvVADJx2lLKycunn1cLtQ2UKAlO7NrYoOif0z1Ltvp32R+QA+h8wt50Gw2v9u26cPhcN87DyQOZzQjCBCRJw6JLTYJz9h8YDmIoU5gn/5EniSJzTg+Wfhka4BZesYsB5rqSC5w7Ef7JpmJkS9k+++Q5sXJlsQYqwKGQf5JXOy88Jc7cgC+fJ+aBodUfm2l/BcoaxBxMSGR9yce2lXKbXJE2R9pExtW07oCVgV0yWw2m6nnOSE5wvsjpawLqYJsY9ka5L3YqIlL2ve40pAzM69C3ruCLYkxXiakvnEp+x4nIHBbKb8Jqdvb24Js45ADOGLhY5GA3heOVvu2Ri4rQJPJhDNtRO9DDNOJkIFPXBoXOhs9ODgIsKxt3tfQGmDfYvPMe6fW4XW4y4rs7OzceR43voH3U7wl8cnqpY7Xk8zLzhiQHwLm0iqzHankA4eHIks7h+ClTuyYqr/QcIaNDM1Y8A7OeW5tu0xXKv9GpnN0dtDRaPS1KsFT1vKRj0kU+Ybbhq+Dbtiw4QPwF7hf5Kkjy8aBAAAAAElFTkSuQmCC",
+      "type": "framework",
+      "learning": true
+    },
+    {
+      "id": 5,
+      "name": "tailwind",
+      "icon": "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAOaSURBVHgB7ZnNUdtAFMefTRguMDE3DoBFB3SAUgF0gDuAVGBRQUwFmA6ggpgOSAXZgA++RbF9sj12/s+WNJtF+6GVzEwG/2Y80no/9N7u+1itiDZs2PBfU6M1EARBYz6fX9dqtbPFYtHAX516vf4kAFVMZQokQl9C6AsIHea1wf891HerVKaUAiw0LqcQrI3fKe4brn2hyAP6PLy8vNxTCbwUgOAhZvscty0qILSGGL8HjHff7/d7VBBnBRKhQ9xekbvQIu1eoH0PJnYLC3t26WBUQHHGkIrTopWyHSqOoJXzP5r8RavA8fFxG5eI/BGw75NkEn5SCVND/xuYV5RXVzf0K2XbHHH4isljG/dZgQxYwGddnUkBQSWYTqc32UNg01QCKCB0dVoFMIO/yBP07Q4GA5GWeRU4ZJIn6Ct0dVoFtra2BHkiz740nvcqQIFYV2cyoZj8HtaTZz8Fq8BZuEcejMfjH7o6rQJJ6PJRInPYgEMQSMtQ4IY8iIGuzrQCy75UDPH6+vqYFhD+2ru7u1dZJVaBigcHY0IzKmDyfg2RUg4Rga7lVQBdKoDJ/pm6pbMgd4S8MTs6OmrRagvR2NvbO8seuAqpzitrm0SbCQlyRA2TEPRSKl5nAxZPbMJUaVsB51yA0JmFSXZeee+EWQwPDw+zcsHEJkyVlTixmrjYedU2UOI8k6hAYsNYwlRvVADJx2lLKycunn1cLtQ2UKAlO7NrYoOif0z1Ltvp32R+QA+h8wt50Gw2v9u26cPhcN87DyQOZzQjCBCRJw6JLTYJz9h8YDmIoU5gn/5EniSJzTg+Wfhka4BZesYsB5rqSC5w7Ef7JpmJkS9k+++Q5sXJlsQYqwKGQf5JXOy88Jc7cgC+fJ+aBodUfm2l/BcoaxBxMSGR9yce2lXKbXJE2R9pExtW07oCVgV0yWw2m6nnOSE5wvsjpawLqYJsY9ka5L3YqIlL2ve40pAzM69C3ruCLYkxXiakvnEp+x4nIHBbKb8Jqdvb24Js45ADOGLhY5GA3heOVvu2Ri4rQJPJhDNtRO9DDNOJkIFPXBoXOhs9ODgIsKxt3tfQGmDfYvPMe6fW4XW4y4rs7OzceR43voH3U7wl8cnqpY7Xk8zLzhiQHwLm0iqzHankA4eHIks7h+ClTuyYqr/QcIaNDM1Y8A7OeW5tu0xXKv9GpnN0dtDRaPS1KsFT1vKRj0kU+Ybbhq+Dbtiw4QPwF7hf5Kkjy8aBAAAAAElFTkSuQmCC",
+      "type": "framework",
+      "learning": false
+    },
+    {
+      "id": 6,
+      "name": "HTML5",
+      "icon": "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAOaSURBVHgB7ZnNUdtAFMefTRguMDE3DoBFB3SAUgF0gDuAVGBRQUwFmA6ggpgOSAXZgA++RbF9sj12/s+WNJtF+6GVzEwG/2Y80no/9N7u+1itiDZs2PBfU6M1EARBYz6fX9dqtbPFYtHAX516vf4kAFVMZQokQl9C6AsIHea1wf891HerVKaUAiw0LqcQrI3fKe4brn2hyAP6PLy8vNxTCbwUgOAhZvscty0qILSGGL8HjHff7/d7VBBnBRKhQ9xekbvQIu1eoH0PJnYLC3t26WBUQHHGkIrTopWyHSqOoJXzP5r8RavA8fFxG5eI/BGw75NkEn5SCVND/xuYV5RXVzf0K2XbHHH4isljG/dZgQxYwGddnUkBQSWYTqc32UNg01QCKCB0dVoFMIO/yBP07Q4GA5GWeRU4ZJIn6Ct0dVoFtra2BHkiz740nvcqQIFYV2cyoZj8HtaTZz8Fq8BZuEcejMfjH7o6rQJJ6PJRInPYgEMQSMtQ4IY8iIGuzrQCy75UDPH6+vqYFhD+2ru7u1dZJVaBigcHY0IzKmDyfg2RUg4Rga7lVQBdKoDJ/pm6pbMgd4S8MTs6OmrRagvR2NvbO8seuAqpzitrm0SbCQlyRA2TEPRSKl5nAxZPbMJUaVsB51yA0JmFSXZeee+EWQwPDw+zcsHEJkyVlTixmrjYedU2UOI8k6hAYsNYwlRvVADJx2lLKycunn1cLtQ2UKAlO7NrYoOif0z1Ltvp32R+QA+h8wt50Gw2v9u26cPhcN87DyQOZzQjCBCRJw6JLTYJz9h8YDmIoU5gn/5EniSJzTg+Wfhka4BZesYsB5rqSC5w7Ef7JpmJkS9k+++Q5sXJlsQYqwKGQf5JXOy88Jc7cgC+fJ+aBodUfm2l/BcoaxBxMSGR9yce2lXKbXJE2R9pExtW07oCVgV0yWw2m6nnOSE5wvsjpawLqYJsY9ka5L3YqIlL2ve40pAzM69C3ruCLYkxXiakvnEp+x4nIHBbKb8Jqdvb24Js45ADOGLhY5GA3heOVvu2Ri4rQJPJhDNtRO9DDNOJkIFPXBoXOhs9ODgIsKxt3tfQGmDfYvPMe6fW4XW4y4rs7OzceR43voH3U7wl8cnqpY7Xk8zLzhiQHwLm0iqzHankA4eHIks7h+ClTuyYqr/QcIaNDM1Y8A7OeW5tu0xXKv9GpnN0dtDRaPS1KsFT1vKRj0kU+Ybbhq+Dbtiw4QPwF7hf5Kkjy8aBAAAAAElFTkSuQmCC",
+      "type": "language",
+      "learning": true
+    },
+    {
+      "id": 7,
+      "name": "CSS3",
+      "icon": "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAOaSURBVHgB7ZnNUdtAFMefTRguMDE3DoBFB3SAUgF0gDuAVGBRQUwFmA6ggpgOSAXZgA++RbF9sj12/s+WNJtF+6GVzEwG/2Y80no/9N7u+1itiDZs2PBfU6M1EARBYz6fX9dqtbPFYtHAX516vf4kAFVMZQokQl9C6AsIHea1wf891HerVKaUAiw0LqcQrI3fKe4brn2hyAP6PLy8vNxTCbwUgOAhZvscty0qILSGGL8HjHff7/d7VBBnBRKhQ9xekbvQIu1eoH0PJnYLC3t26WBUQHHGkIrTopWyHSqOoJXzP5r8RavA8fFxG5eI/BGw75NkEn5SCVND/xuYV5RXVzf0K2XbHHH4isljG/dZgQxYwGddnUkBQSWYTqc32UNg01QCKCB0dVoFMIO/yBP07Q4GA5GWeRU4ZJIn6Ct0dVoFtra2BHkiz740nvcqQIFYV2cyoZj8HtaTZz8Fq8BZuEcejMfjH7o6rQJJ6PJRInPYgEMQSMtQ4IY8iIGuzrQCy75UDPH6+vqYFhD+2ru7u1dZJVaBigcHY0IzKmDyfg2RUg4Rga7lVQBdKoDJ/pm6pbMgd4S8MTs6OmrRagvR2NvbO8seuAqpzitrm0SbCQlyRA2TEPRSKl5nAxZPbMJUaVsB51yA0JmFSXZeee+EWQwPDw+zcsHEJkyVlTixmrjYedU2UOI8k6hAYsNYwlRvVADJx2lLKycunn1cLtQ2UKAlO7NrYoOif0z1Ltvp32R+QA+h8wt50Gw2v9u26cPhcN87DyQOZzQjCBCRJw6JLTYJz9h8YDmIoU5gn/5EniSJzTg+Wfhka4BZesYsB5rqSC5w7Ef7JpmJkS9k+++Q5sXJlsQYqwKGQf5JXOy88Jc7cgC+fJ+aBodUfm2l/BcoaxBxMSGR9yce2lXKbXJE2R9pExtW07oCVgV0yWw2m6nnOSE5wvsjpawLqYJsY9ka5L3YqIlL2ve40pAzM69C3ruCLYkxXiakvnEp+x4nIHBbKb8Jqdvb24Js45ADOGLhY5GA3heOVvu2Ri4rQJPJhDNtRO9DDNOJkIFPXBoXOhs9ODgIsKxt3tfQGmDfYvPMe6fW4XW4y4rs7OzceR43voH3U7wl8cnqpY7Xk8zLzhiQHwLm0iqzHankA4eHIks7h+ClTuyYqr/QcIaNDM1Y8A7OeW5tu0xXKv9GpnN0dtDRaPS1KsFT1vKRj0kU+Ybbhq+Dbtiw4QPwF7hf5Kkjy8aBAAAAAElFTkSuQmCC",
+      "type": "language",
+      "learning": true
+    },
+    {
+      "id": 8,
+      "name": "javascript",
+      "icon": "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAOaSURBVHgB7ZnNUdtAFMefTRguMDE3DoBFB3SAUgF0gDuAVGBRQUwFmA6ggpgOSAXZgA++RbF9sj12/s+WNJtF+6GVzEwG/2Y80no/9N7u+1itiDZs2PBfU6M1EARBYz6fX9dqtbPFYtHAX516vf4kAFVMZQokQl9C6AsIHea1wf891HerVKaUAiw0LqcQrI3fKe4brn2hyAP6PLy8vNxTCbwUgOAhZvscty0qILSGGL8HjHff7/d7VBBnBRKhQ9xekbvQIu1eoH0PJnYLC3t26WBUQHHGkIrTopWyHSqOoJXzP5r8RavA8fFxG5eI/BGw75NkEn5SCVND/xuYV5RXVzf0K2XbHHH4isljG/dZgQxYwGddnUkBQSWYTqc32UNg01QCKCB0dVoFMIO/yBP07Q4GA5GWeRU4ZJIn6Ct0dVoFtra2BHkiz740nvcqQIFYV2cyoZj8HtaTZz8Fq8BZuEcejMfjH7o6rQJJ6PJRInPYgEMQSMtQ4IY8iIGuzrQCy75UDPH6+vqYFhD+2ru7u1dZJVaBigcHY0IzKmDyfg2RUg4Rga7lVQBdKoDJ/pm6pbMgd4S8MTs6OmrRagvR2NvbO8seuAqpzitrm0SbCQlyRA2TEPRSKl5nAxZPbMJUaVsB51yA0JmFSXZeee+EWQwPDw+zcsHEJkyVlTixmrjYedU2UOI8k6hAYsNYwlRvVADJx2lLKycunn1cLtQ2UKAlO7NrYoOif0z1Ltvp32R+QA+h8wt50Gw2v9u26cPhcN87DyQOZzQjCBCRJw6JLTYJz9h8YDmIoU5gn/5EniSJzTg+Wfhka4BZesYsB5rqSC5w7Ef7JpmJkS9k+++Q5sXJlsQYqwKGQf5JXOy88Jc7cgC+fJ+aBodUfm2l/BcoaxBxMSGR9yce2lXKbXJE2R9pExtW07oCVgV0yWw2m6nnOSE5wvsjpawLqYJsY9ka5L3YqIlL2ve40pAzM69C3ruCLYkxXiakvnEp+x4nIHBbKb8Jqdvb24Js45ADOGLhY5GA3heOVvu2Ri4rQJPJhDNtRO9DDNOJkIFPXBoXOhs9ODgIsKxt3tfQGmDfYvPMe6fW4XW4y4rs7OzceR43voH3U7wl8cnqpY7Xk8zLzhiQHwLm0iqzHankA4eHIks7h+ClTuyYqr/QcIaNDM1Y8A7OeW5tu0xXKv9GpnN0dtDRaPS1KsFT1vKRj0kU+Ybbhq+Dbtiw4QPwF7hf5Kkjy8aBAAAAAElFTkSuQmCC",
+      "type": "language",
+      "learning": false
+    },
+    {
+      "id": 9,
+      "name": "github",
+      "icon": "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAOaSURBVHgB7ZnNUdtAFMefTRguMDE3DoBFB3SAUgF0gDuAVGBRQUwFmA6ggpgOSAXZgA++RbF9sj12/s+WNJtF+6GVzEwG/2Y80no/9N7u+1itiDZs2PBfU6M1EARBYz6fX9dqtbPFYtHAX516vf4kAFVMZQokQl9C6AsIHea1wf891HerVKaUAiw0LqcQrI3fKe4brn2hyAP6PLy8vNxTCbwUgOAhZvscty0qILSGGL8HjHff7/d7VBBnBRKhQ9xekbvQIu1eoH0PJnYLC3t26WBUQHHGkIrTopWyHSqOoJXzP5r8RavA8fFxG5eI/BGw75NkEn5SCVND/xuYV5RXVzf0K2XbHHH4isljG/dZgQxYwGddnUkBQSWYTqc32UNg01QCKCB0dVoFMIO/yBP07Q4GA5GWeRU4ZJIn6Ct0dVoFtra2BHkiz740nvcqQIFYV2cyoZj8HtaTZz8Fq8BZuEcejMfjH7o6rQJJ6PJRInPYgEMQSMtQ4IY8iIGuzrQCy75UDPH6+vqYFhD+2ru7u1dZJVaBigcHY0IzKmDyfg2RUg4Rga7lVQBdKoDJ/pm6pbMgd4S8MTs6OmrRagvR2NvbO8seuAqpzitrm0SbCQlyRA2TEPRSKl5nAxZPbMJUaVsB51yA0JmFSXZeee+EWQwPDw+zcsHEJkyVlTixmrjYedU2UOI8k6hAYsNYwlRvVADJx2lLKycunn1cLtQ2UKAlO7NrYoOif0z1Ltvp32R+QA+h8wt50Gw2v9u26cPhcN87DyQOZzQjCBCRJw6JLTYJz9h8YDmIoU5gn/5EniSJzTg+Wfhka4BZesYsB5rqSC5w7Ef7JpmJkS9k+++Q5sXJlsQYqwKGQf5JXOy88Jc7cgC+fJ+aBodUfm2l/BcoaxBxMSGR9yce2lXKbXJE2R9pExtW07oCVgV0yWw2m6nnOSE5wvsjpawLqYJsY9ka5L3YqIlL2ve40pAzM69C3ruCLYkxXiakvnEp+x4nIHBbKb8Jqdvb24Js45ADOGLhY5GA3heOVvu2Ri4rQJPJhDNtRO9DDNOJkIFPXBoXOhs9ODgIsKxt3tfQGmDfYvPMe6fW4XW4y4rs7OzceR43voH3U7wl8cnqpY7Xk8zLzhiQHwLm0iqzHankA4eHIks7h+ClTuyYqr/QcIaNDM1Y8A7OeW5tu0xXKv9GpnN0dtDRaPS1KsFT1vKRj0kU+Ybbhq+Dbtiw4QPwF7hf5Kkjy8aBAAAAAElFTkSuQmCC",
+      "type": "software",
+      "learning": false
+    },
+    {
+      "id": 10,
+      "name": "figma",
+      "icon": "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAOaSURBVHgB7ZnNUdtAFMefTRguMDE3DoBFB3SAUgF0gDuAVGBRQUwFmA6ggpgOSAXZgA++RbF9sj12/s+WNJtF+6GVzEwG/2Y80no/9N7u+1itiDZs2PBfU6M1EARBYz6fX9dqtbPFYtHAX516vf4kAFVMZQokQl9C6AsIHea1wf891HerVKaUAiw0LqcQrI3fKe4brn2hyAP6PLy8vNxTCbwUgOAhZvscty0qILSGGL8HjHff7/d7VBBnBRKhQ9xekbvQIu1eoH0PJnYLC3t26WBUQHHGkIrTopWyHSqOoJXzP5r8RavA8fFxG5eI/BGw75NkEn5SCVND/xuYV5RXVzf0K2XbHHH4isljG/dZgQxYwGddnUkBQSWYTqc32UNg01QCKCB0dVoFMIO/yBP07Q4GA5GWeRU4ZJIn6Ct0dVoFtra2BHkiz740nvcqQIFYV2cyoZj8HtaTZz8Fq8BZuEcejMfjH7o6rQJJ6PJRInPYgEMQSMtQ4IY8iIGuzrQCy75UDPH6+vqYFhD+2ru7u1dZJVaBigcHY0IzKmDyfg2RUg4Rga7lVQBdKoDJ/pm6pbMgd4S8MTs6OmrRagvR2NvbO8seuAqpzitrm0SbCQlyRA2TEPRSKl5nAxZPbMJUaVsB51yA0JmFSXZeee+EWQwPDw+zcsHEJkyVlTixmrjYedU2UOI8k6hAYsNYwlRvVADJx2lLKycunn1cLtQ2UKAlO7NrYoOif0z1Ltvp32R+QA+h8wt50Gw2v9u26cPhcN87DyQOZzQjCBCRJw6JLTYJz9h8YDmIoU5gn/5EniSJzTg+Wfhka4BZesYsB5rqSC5w7Ef7JpmJkS9k+++Q5sXJlsQYqwKGQf5JXOy88Jc7cgC+fJ+aBodUfm2l/BcoaxBxMSGR9yce2lXKbXJE2R9pExtW07oCVgV0yWw2m6nnOSE5wvsjpawLqYJsY9ka5L3YqIlL2ve40pAzM69C3ruCLYkxXiakvnEp+x4nIHBbKb8Jqdvb24Js45ADOGLhY5GA3heOVvu2Ri4rQJPJhDNtRO9DDNOJkIFPXBoXOhs9ODgIsKxt3tfQGmDfYvPMe6fW4XW4y4rs7OzceR43voH3U7wl8cnqpY7Xk8zLzhiQHwLm0iqzHankA4eHIks7h+ClTuyYqr/QcIaNDM1Y8A7OeW5tu0xXKv9GpnN0dtDRaPS1KsFT1vKRj0kU+Ybbhq+Dbtiw4QPwF7hf5Kkjy8aBAAAAAElFTkSuQmCC",
+      "type": "software",
+      "learning": false
+    },
+    {
+      "id": 11,
+      "name": "VSCode",
+      "icon": "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAOaSURBVHgB7ZnNUdtAFMefTRguMDE3DoBFB3SAUgF0gDuAVGBRQUwFmA6ggpgOSAXZgA++RbF9sj12/s+WNJtF+6GVzEwG/2Y80no/9N7u+1itiDZs2PBfU6M1EARBYz6fX9dqtbPFYtHAX516vf4kAFVMZQokQl9C6AsIHea1wf891HerVKaUAiw0LqcQrI3fKe4brn2hyAP6PLy8vNxTCbwUgOAhZvscty0qILSGGL8HjHff7/d7VBBnBRKhQ9xekbvQIu1eoH0PJnYLC3t26WBUQHHGkIrTopWyHSqOoJXzP5r8RavA8fFxG5eI/BGw75NkEn5SCVND/xuYV5RXVzf0K2XbHHH4isljG/dZgQxYwGddnUkBQSWYTqc32UNg01QCKCB0dVoFMIO/yBP07Q4GA5GWeRU4ZJIn6Ct0dVoFtra2BHkiz740nvcqQIFYV2cyoZj8HtaTZz8Fq8BZuEcejMfjH7o6rQJJ6PJRInPYgEMQSMtQ4IY8iIGuzrQCy75UDPH6+vqYFhD+2ru7u1dZJVaBigcHY0IzKmDyfg2RUg4Rga7lVQBdKoDJ/pm6pbMgd4S8MTs6OmrRagvR2NvbO8seuAqpzitrm0SbCQlyRA2TEPRSKl5nAxZPbMJUaVsB51yA0JmFSXZeee+EWQwPDw+zcsHEJkyVlTixmrjYedU2UOI8k6hAYsNYwlRvVADJx2lLKycunn1cLtQ2UKAlO7NrYoOif0z1Ltvp32R+QA+h8wt50Gw2v9u26cPhcN87DyQOZzQjCBCRJw6JLTYJz9h8YDmIoU5gn/5EniSJzTg+Wfhka4BZesYsB5rqSC5w7Ef7JpmJkS9k+++Q5sXJlsQYqwKGQf5JXOy88Jc7cgC+fJ+aBodUfm2l/BcoaxBxMSGR9yce2lXKbXJE2R9pExtW07oCVgV0yWw2m6nnOSE5wvsjpawLqYJsY9ka5L3YqIlL2ve40pAzM69C3ruCLYkxXiakvnEp+x4nIHBbKb8Jqdvb24Js45ADOGLhY5GA3heOVvu2Ri4rQJPJhDNtRO9DDNOJkIFPXBoXOhs9ODgIsKxt3tfQGmDfYvPMe6fW4XW4y4rs7OzceR43voH3U7wl8cnqpY7Xk8zLzhiQHwLm0iqzHankA4eHIks7h+ClTuyYqr/QcIaNDM1Y8A7OeW5tu0xXKv9GpnN0dtDRaPS1KsFT1vKRj0kU+Ybbhq+Dbtiw4QPwF7hf5Kkjy8aBAAAAAElFTkSuQmCC",
+      "type": "software",
+      "learning": false
+    },
+    {
+      "id": 12,
+      "name": "nodeJS",
+      "icon": "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAOaSURBVHgB7ZnNUdtAFMefTRguMDE3DoBFB3SAUgF0gDuAVGBRQUwFmA6ggpgOSAXZgA++RbF9sj12/s+WNJtF+6GVzEwG/2Y80no/9N7u+1itiDZs2PBfU6M1EARBYz6fX9dqtbPFYtHAX516vf4kAFVMZQokQl9C6AsIHea1wf891HerVKaUAiw0LqcQrI3fKe4brn2hyAP6PLy8vNxTCbwUgOAhZvscty0qILSGGL8HjHff7/d7VBBnBRKhQ9xekbvQIu1eoH0PJnYLC3t26WBUQHHGkIrTopWyHSqOoJXzP5r8RavA8fFxG5eI/BGw75NkEn5SCVND/xuYV5RXVzf0K2XbHHH4isljG/dZgQxYwGddnUkBQSWYTqc32UNg01QCKCB0dVoFMIO/yBP07Q4GA5GWeRU4ZJIn6Ct0dVoFtra2BHkiz740nvcqQIFYV2cyoZj8HtaTZz8Fq8BZuEcejMfjH7o6rQJJ6PJRInPYgEMQSMtQ4IY8iIGuzrQCy75UDPH6+vqYFhD+2ru7u1dZJVaBigcHY0IzKmDyfg2RUg4Rga7lVQBdKoDJ/pm6pbMgd4S8MTs6OmrRagvR2NvbO8seuAqpzitrm0SbCQlyRA2TEPRSKl5nAxZPbMJUaVsB51yA0JmFSXZeee+EWQwPDw+zcsHEJkyVlTixmrjYedU2UOI8k6hAYsNYwlRvVADJx2lLKycunn1cLtQ2UKAlO7NrYoOif0z1Ltvp32R+QA+h8wt50Gw2v9u26cPhcN87DyQOZzQjCBCRJw6JLTYJz9h8YDmIoU5gn/5EniSJzTg+Wfhka4BZesYsB5rqSC5w7Ef7JpmJkS9k+++Q5sXJlsQYqwKGQf5JXOy88Jc7cgC+fJ+aBodUfm2l/BcoaxBxMSGR9yce2lXKbXJE2R9pExtW07oCVgV0yWw2m6nnOSE5wvsjpawLqYJsY9ka5L3YqIlL2ve40pAzM69C3ruCLYkxXiakvnEp+x4nIHBbKb8Jqdvb24Js45ADOGLhY5GA3heOVvu2Ri4rQJPJhDNtRO9DDNOJkIFPXBoXOhs9ODgIsKxt3tfQGmDfYvPMe6fW4XW4y4rs7OzceR43voH3U7wl8cnqpY7Xk8zLzhiQHwLm0iqzHankA4eHIks7h+ClTuyYqr/QcIaNDM1Y8A7OeW5tu0xXKv9GpnN0dtDRaPS1KsFT1vKRj0kU+Ybbhq+Dbtiw4QPwF7hf5Kkjy8aBAAAAAElFTkSuQmCC",
+      "type": "software",
+      "learning": true
+    },
+    {
+      "id": 13,
+      "name": "sanity",
+      "icon": "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAOaSURBVHgB7ZnNUdtAFMefTRguMDE3DoBFB3SAUgF0gDuAVGBRQUwFmA6ggpgOSAXZgA++RbF9sj12/s+WNJtF+6GVzEwG/2Y80no/9N7u+1itiDZs2PBfU6M1EARBYz6fX9dqtbPFYtHAX516vf4kAFVMZQokQl9C6AsIHea1wf891HerVKaUAiw0LqcQrI3fKe4brn2hyAP6PLy8vNxTCbwUgOAhZvscty0qILSGGL8HjHff7/d7VBBnBRKhQ9xekbvQIu1eoH0PJnYLC3t26WBUQHHGkIrTopWyHSqOoJXzP5r8RavA8fFxG5eI/BGw75NkEn5SCVND/xuYV5RXVzf0K2XbHHH4isljG/dZgQxYwGddnUkBQSWYTqc32UNg01QCKCB0dVoFMIO/yBP07Q4GA5GWeRU4ZJIn6Ct0dVoFtra2BHkiz740nvcqQIFYV2cyoZj8HtaTZz8Fq8BZuEcejMfjH7o6rQJJ6PJRInPYgEMQSMtQ4IY8iIGuzrQCy75UDPH6+vqYFhD+2ru7u1dZJVaBigcHY0IzKmDyfg2RUg4Rga7lVQBdKoDJ/pm6pbMgd4S8MTs6OmrRagvR2NvbO8seuAqpzitrm0SbCQlyRA2TEPRSKl5nAxZPbMJUaVsB51yA0JmFSXZeee+EWQwPDw+zcsHEJkyVlTixmrjYedU2UOI8k6hAYsNYwlRvVADJx2lLKycunn1cLtQ2UKAlO7NrYoOif0z1Ltvp32R+QA+h8wt50Gw2v9u26cPhcN87DyQOZzQjCBCRJw6JLTYJz9h8YDmIoU5gn/5EniSJzTg+Wfhka4BZesYsB5rqSC5w7Ef7JpmJkS9k+++Q5sXJlsQYqwKGQf5JXOy88Jc7cgC+fJ+aBodUfm2l/BcoaxBxMSGR9yce2lXKbXJE2R9pExtW07oCVgV0yWw2m6nnOSE5wvsjpawLqYJsY9ka5L3YqIlL2ve40pAzM69C3ruCLYkxXiakvnEp+x4nIHBbKb8Jqdvb24Js45ADOGLhY5GA3heOVvu2Ri4rQJPJhDNtRO9DDNOJkIFPXBoXOhs9ODgIsKxt3tfQGmDfYvPMe6fW4XW4y4rs7OzceR43voH3U7wl8cnqpY7Xk8zLzhiQHwLm0iqzHankA4eHIks7h+ClTuyYqr/QcIaNDM1Y8A7OeW5tu0xXKv9GpnN0dtDRaPS1KsFT1vKRj0kU+Ybbhq+Dbtiw4QPwF7hf5Kkjy8aBAAAAAElFTkSuQmCC",
+      "type": "software",
+      "learning": false
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "Portfolio",
+      "summary": "This project was just a way for me to train technologies that I’m currently learning and to show what I can do at my current level without any real goal in terms of client requirements or time limit (and also to have a bit of fun about the content and the look of the website). It allowed me to really explore and understand more of what I can do at the moment with Angular, and I’ll either update it frequently or create some brand new projects to challenge me even further throughout my learning journey !",
+      "imgsUrl": [
+        "https://source.unsplash.com/random/",
+        "https://source.unsplash.com/random/",
+        "https://source.unsplash.com/random/",
+        "https://source.unsplash.com/random/",
+        "https://source.unsplash.com/random/"
+      ],
+      "techUsed": [
+        "http://localhost:3000/techs/9",
+        "http://localhost:3000/techs/1"
+      ],
+      "websiteUrl": "http://google.com"
+    },
+    {
+      "id": 2,
+      "title": "Oiloftrop",
+      "summary": "This project was just a way for me to train technologies that I’m currently learning and to show what I can do at my current level without any real goal in terms of client requirements or time limit (and also to have a bit of fun about the content and the look of the website). It allowed me to really explore and understand more of what I can do at the moment with Angular, and I’ll either update it frequently or create some brand new projects to challenge me even further throughout my learning journey !",
+      "imgsUrl": [
+        "https://source.unsplash.com/random/",
+        "https://source.unsplash.com/random/",
+        "https://source.unsplash.com/random/",
+        "https://source.unsplash.com/random/",
+        "https://source.unsplash.com/random/"
+      ],
+      "techUsed": [
+        "http://localhost:3000/techs/3",
+        "http://localhost:3000/techs/6",
+        "http://localhost:3000/techs/13"
+      ],
+      "websiteUrl": "http://google.com"
+    },
+    {
+      "id": 3,
+      "title": "Folioport",
+      "summary": "This project was just a way for me to train technologies that I’m currently learning and to show what I can do at my current level without any real goal in terms of client requirements or time limit (and also to have a bit of fun about the content and the look of the website). It allowed me to really explore and understand more of what I can do at the moment with Angular, and I’ll either update it frequently or create some brand new projects to challenge me even further throughout my learning journey !",
+      "imgsUrl": [
+        "https://source.unsplash.com/random/",
+        "https://source.unsplash.com/random/",
+        "https://source.unsplash.com/random/",
+        "https://source.unsplash.com/random/",
+        "https://source.unsplash.com/random/"
+      ],
+      "techUsed": [
+        "http://localhost:3000/techs/7",
+        "http://localhost:3000/techs/2",
+        "http://localhost:3000/techs/4"
+      ],
+      "websiteUrl": "http://google.com"
+    },
+    {
+      "id": 4,
+      "title": "Tropoilof",
+      "summary": "This project was just a way for me to train technologies that I’m currently learning and to show what I can do at my current level without any real goal in terms of client requirements or time limit (and also to have a bit of fun about the content and the look of the website). It allowed me to really explore and understand more of what I can do at the moment with Angular, and I’ll either update it frequently or create some brand new projects to challenge me even further throughout my learning journey !",
+      "imgsUrl": [
+        "https://source.unsplash.com/random/",
+        "https://source.unsplash.com/random/",
+        "https://source.unsplash.com/random/",
+        "https://source.unsplash.com/random/",
+        "https://source.unsplash.com/random/"
+      ],
+      "techUsed": [
+        "http://localhost:3000/techs/5",
+        "http://localhost:3000/techs/8",
+        "http://localhost:3000/techs/10"
+      ],
+      "websiteUrl": "http://google.com"
+    },
+    {
+      "id": 5,
+      "title": "Error 404",
+      "summary": "This project was just a way for me to train technologies that I’m currently learning and to show what I can do at my current level without any real goal in terms of client requirements or time limit (and also to have a bit of fun about the content and the look of the website). It allowed me to really explore and understand more of what I can do at the moment with Angular, and I’ll either update it frequently or create some brand new projects to challenge me even further throughout my learning journey !",
+      "imgsUrl": [
+        "https://source.unsplash.com/random/",
+        "https://source.unsplash.com/random/",
+        "https://source.unsplash.com/random/",
+        "https://source.unsplash.com/random/",
+        "https://source.unsplash.com/random/"
+      ],
+      "techUsed": [
+        "http://localhost:3000/techs/11",
+        "http://localhost:3000/techs/12"
+      ],
+      "websiteUrl": "http://google.com"
+    }
+  ]
+}

@@ -1,3 +1,4 @@
+import { environment } from './../../../environments/environment.development';
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import {
@@ -24,6 +25,15 @@ export class LandingPageContentComponent implements OnInit {
   ngOnInit(): void {
     this.initTitles();
     this.initForm();
+    console.log(
+      environment.API_URL +
+        ' | ' +
+        environment.API_PROJECTS +
+        ' | ' +
+        environment.API_TECHS +
+        ' | ' +
+        environment.API_NAV
+    );
   }
 
   onSubmit() {

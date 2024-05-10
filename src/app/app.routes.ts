@@ -1,4 +1,5 @@
 import { Routes } from '@angular/router';
+import { LpProjectListComponent } from './Components/lp-project-list/lp-project-list.component';
 
 export const routes: Routes = [
   {
@@ -7,6 +8,10 @@ export const routes: Routes = [
       import('./pages/landing-page/landing-page.routes').then(
         (r) => r.landingPageRoutes
       ),
+  },
+  {
+    path: 'test',
+    component: LpProjectListComponent,
   },
   { path: '**', redirectTo: 'home' },
 ];
