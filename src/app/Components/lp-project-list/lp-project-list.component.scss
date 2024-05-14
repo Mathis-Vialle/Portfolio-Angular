@@ -48,7 +48,6 @@
       gap: 16px;
       align-items: center;
       cursor: pointer;
-      width: 100%;
 
       &-text {
         font-weight: 400;
@@ -63,12 +62,16 @@
       transition: 0.2s;
 
       &:nth-of-type(odd) {
-        padding-left: 8px;
-        transition: 0.2s;
+        .list-item-title {
+          padding-left: 8px;
+          transition: 0.2s;
+        }
       }
       &:nth-of-type(even) {
-        padding-right: 8px;
-        transition: 0.2s;
+        .list-item-title {
+          padding-right: 8px;
+          transition: 0.2s;
+        }
       }
     }
 
@@ -77,10 +80,7 @@
     }
 
     &:not(:hover) {
-      &:nth-of-type(even) {
-        transition: 1s;
-      }
-      &:nth-of-type(odd) {
+      .list-item-title {
         transition: 1s;
       }
     }
