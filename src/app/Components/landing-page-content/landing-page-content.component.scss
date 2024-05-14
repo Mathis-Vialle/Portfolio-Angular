@@ -31,17 +31,11 @@
       padding: 0;
     }
 
-    // .projects {
-    //   &-container {
-    //   }
-
-    //   &-list {
-    //     list-style: none;
-
-    //     .list-item {
-    //     }
-    //   }
-    // }
+    .projects {
+      &-container {
+        width: 60%;
+      }
+    }
 
     .form {
       display: flex;

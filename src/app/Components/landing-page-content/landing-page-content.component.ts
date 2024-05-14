@@ -10,11 +10,13 @@ import {
 } from '@angular/forms';
 import { LandingPageServices } from '../../services/landing-page.service';
 import { tap } from 'rxjs';
+import { MatSnackBar } from '@angular/material/snack-bar';
+import { LpProjectListComponent } from '../lp-project-list/lp-project-list.component';
 
 @Component({
   selector: 'app-landing-page-content',
   standalone: true,
-  imports: [CommonModule, ReactiveFormsModule],
+  imports: [CommonModule, ReactiveFormsModule, LpProjectListComponent],
   templateUrl: './landing-page-content.component.html',
   styleUrl: './landing-page-content.component.scss',
 })
@@ -27,7 +29,8 @@ export class LandingPageContentComponent implements OnInit {
 
   constructor(
     private fb: FormBuilder,
-    private lpService: LandingPageServices
+    private lpService: LandingPageServices,
+    private snackBar: MatSnackBar
   ) {}
 
   ngOnInit(): void {
@@ -74,6 +77,12 @@ export class LandingPageContentComponent implements OnInit {
     }
   }
 
+  openSnackBar(message: string) {
+    this.snackBar.open(message, 'OK', {
+      duration: 2000,
+    });
+  }
+
   onSubmitForm() {
     this.isLoading = true;
     this.lpService
@@ -83,8 +92,12 @@ export class LandingPageContentComponent implements OnInit {
           this.isLoading = false;
           if (saved) {
             this.resetForm();
+            this.openSnackBar('Email sent successfully');
           } else {
             console.error("Echec de l'enregistrement");
+            this.openSnackBar(
+              'There was an error while sending, please try later'
+            );
           }
         })
       )

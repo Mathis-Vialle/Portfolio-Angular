@@ -215,6 +215,22 @@
       "subject": "Test loading while sending",
       "message": "test",
       "id": 2
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Snackbar",
+      "email": "contactForm@test.com",
+      "subject": "Test snackbar",
+      "message": "test",
+      "id": 3
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Snackbar²",
+      "email": "contactForm@test.com",
+      "subject": "Test snackbar²",
+      "message": "test snackbar",
+      "id": 4
     }
   ]
 }
