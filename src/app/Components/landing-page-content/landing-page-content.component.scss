@@ -48,6 +48,12 @@
       flex-direction: column;
       align-items: end;
 
+      &-error {
+        font-size: 14px;
+        color: red;
+        padding-left: 16px;
+      }
+
       &-row {
         display: flex;
         justify-content: space-between;
@@ -55,6 +61,10 @@
         margin-bottom: 16px;
         gap: 64px;
         max-width: 464px;
+
+        & > div {
+          width: 100%;
+        }
       }
 
       &-cell {
@@ -63,6 +73,10 @@
         color: #555;
         border: 1px solid black;
         width: 100%;
+
+        &-error {
+          border: 1px solid red;
+        }
       }
 
       input {

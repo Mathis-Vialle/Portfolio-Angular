@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable, map } from 'rxjs';
 import { ProjectListItem } from '../../models/project-list-item.model';
 import { LandingPageServices } from '../../services/landing-page.service';
 import { RouterModule } from '@angular/router';
@@ -11,6 +11,7 @@ import {
   transition,
   trigger,
 } from '@angular/animations';
+import { Techs } from '../../models/techs.model';
 
 @Component({
   selector: 'app-lp-project-list',

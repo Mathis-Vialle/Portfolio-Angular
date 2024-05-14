@@ -4,7 +4,7 @@ export class ProjectListItem {
   id!: number;
   title!: string;
   summary!: string;
-  imgsUrl!: string | string[];
-  techUsed!: Techs | Techs[];
+  imgsUrl!: string[];
+  techUsed!: string[];
   websiteUrl!: string;
 }
