@@ -239,6 +239,14 @@
       "subject": "Je t'aimeuh",
       "message": "BLBLBL",
       "id": 5
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Component",
+      "email": "contactForm@test.com",
+      "subject": "Test component contact form",
+      "message": "test component",
+      "id": 6
     }
   ]
 }

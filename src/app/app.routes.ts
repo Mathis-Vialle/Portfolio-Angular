@@ -10,6 +10,13 @@ export const routes: Routes = [
       ),
   },
   {
+    path: 'contact',
+    loadChildren: () =>
+      import('./pages/contact-page/landing-page.routes').then(
+        (r) => r.landingPageRoutes
+      ),
+  },
+  {
     path: 'test',
     component: LpProjectListComponent,
   },
