@@ -1,0 +1,11 @@
+<div
+  class="tis-content"
+  [ngClass]="{
+    inverted: imgPos
+  }"
+>
+  <img class="tis-content-img" [src]="imgData.imgUrl" [alt]="imgData.imgAlt" />
+  <p class="tis-content-text">
+    <ng-content />
+  </p>
+</div>

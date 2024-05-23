@@ -12,8 +12,15 @@ export const routes: Routes = [
   {
     path: 'contact',
     loadChildren: () =>
-      import('./pages/contact-page/landing-page.routes').then(
-        (r) => r.landingPageRoutes
+      import('./pages/contact-page/contact-page.routes').then(
+        (r) => r.contactPageRoutes
+      ),
+  },
+  {
+    path: 'about',
+    loadChildren: () =>
+      import('./pages/about-page/about-page.routes').then(
+        (r) => r.aboutPageRoutes
       ),
   },
   {

@@ -1,0 +1,98 @@
+<div class="ab-content">
+  <span class="ab-content-bg"></span>
+  <div class="content-container">
+    <div class="ab-content-core">
+      <app-text-img-section [imgData]="imgData">
+        Hi, I’m Mathis, a junior front-end developer living and working in
+        Toulouse, France. <br /><br />
+
+        I took an interest in coding in high school and I picked up a liking in
+        design along the way through my studies. As you can see, I’m quite into
+        sober websites, as it’s more interesting to me to craft a beautiful page
+        with only a few elements. <br /><br />
+
+        That simplicity can be found throughout my lifestyle too, I don’t need
+        much to be happy on a day to day basis, just my computer, my cat and my
+        wife. <br /><br />
+
+        I do think of myself as a logical and pragmatic type of person, which
+        helped me tremendously while learning programming. Even then, I’m easy
+        to approach and talk to and I’ll always do my best to either learn from
+        or help others.<br /><br />
+
+        In my free time, I try exploring languages I haven’t thrown myself into
+        yet, I love to cook and discover cultures throughout their food (I can
+        make an incredible butter chicken according to my wife), and I love
+        reducing my lifespan by playing team based video games (of course that’s
+        a joke, I always have a blast playing them with my friends !).
+      </app-text-img-section>
+      <div class="ab-content-core-techs">
+        <h3 class="ab-content-core-techs-title">
+          What can I bring to your company ?
+        </h3>
+        <p class="ab-content-core-techs-subtitle">
+          Well first off, my butter chicken is on the table, but other than that
+          here’s a list of the technologies I’ve already explored and those I’m
+          currently learning :
+        </p>
+        <div class="ab-content-core-techs-section">
+          <div class="techs-section">
+            <h4 class="techs-section-title">Frameworks</h4>
+            <div class="techs-section-container">
+              @for (tech of frameworks$ | async; track tech.id) {
+              <div class="techs-section-container-img">
+                <img
+                  [src]="tech.icon"
+                  [alt]="tech.name + ' icon'"
+                  class="techs-section-container-img-icon"
+                />
+                @if(tech.learning === true) {
+                <span>*</span>
+                }
+              </div>
+              }
+            </div>
+          </div>
+          <div class="techs-section">
+            <h4 class="techs-section-title">Languages</h4>
+            <div class="techs-section-container">
+              @for (tech of languages$ | async; track tech.id) {
+              <div class="techs-section-container-img">
+                <img
+                  [src]="tech.icon"
+                  [alt]="tech.name + ' icon'"
+                  class="techs-section-container-img-icon"
+                />
+                @if(tech.learning === true) {
+                <span>*</span>
+                }
+              </div>
+              }
+            </div>
+          </div>
+          <div class="techs-section">
+            <h4 class="techs-section-title">Softwares</h4>
+            <div class="techs-section-container">
+              @for (tech of softwares$ | async; track tech.id) {
+              <div class="techs-section-container-img">
+                <img
+                  [src]="tech.icon"
+                  [alt]="tech.name + ' icon'"
+                  class="techs-section-container-img-icon"
+                />
+                @if(tech.learning === true) {
+                <span>*</span>
+                }
+              </div>
+              }
+            </div>
+          </div>
+          <p class="techs-section-legend">
+            The icons marked with a star* are technologies I’m currently
+            learning
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

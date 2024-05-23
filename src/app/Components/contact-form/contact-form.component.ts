@@ -64,11 +64,11 @@ export class ContactFormComponent {
 
   getFormCtrlErrorText(ctrl: AbstractControl) {
     if (ctrl.hasError('required')) {
-      return 'Ce champ est requis';
+      return 'This field is required';
     } else if (ctrl.hasError('email') || ctrl.hasError('pattern')) {
-      return 'Veuillez saisir une adresse mail valide';
+      return 'Please enter a valid email address';
     } else {
-      return 'Ce champ contient une erreur';
+      return 'This field contains an error';
     }
   }
 

@@ -11,15 +11,5 @@ import { ContactFormComponent } from '../contact-form/contact-form.component';
   styleUrl: './landing-page-content.component.scss',
 })
 export class LandingPageContentComponent implements OnInit {
-  lpSideTitle!: string;
-  lpSideTitleTwo!: string;
-
-  ngOnInit(): void {
-    this.initTitles();
-  }
-
-  private initTitles() {
-    this.lpSideTitle = 'Recent projects';
-    this.lpSideTitleTwo = "Let's work together";
-  }
+  ngOnInit(): void {}
 }

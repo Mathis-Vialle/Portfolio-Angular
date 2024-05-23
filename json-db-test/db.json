@@ -20,91 +20,91 @@
     {
       "id": 1,
       "name": "angular",
-      "icon": "https://static-00.iconduck.com/assets.00/angular-icon-2048x554-ogh7idu0.png",
+      "icon": "https://i.ibb.co/Xp7cB95/angular.png",
       "type": "framework",
       "learning": true
     },
     {
       "id": 2,
       "name": "react",
-      "icon": "https://static-00.iconduck.com/assets.00/angular-icon-2048x554-ogh7idu0.png",
+      "icon": "https://i.ibb.co/gFYXNmM/react.png",
       "type": "framework",
       "learning": false
     },
     {
       "id": 3,
       "name": "nextJS",
-      "icon": "https://static-00.iconduck.com/assets.00/angular-icon-2048x554-ogh7idu0.png",
+      "icon": "https://i.ibb.co/8rXYJMN/next.png",
       "type": "framework",
       "learning": false
     },
     {
       "id": 4,
       "name": "vueJS",
-      "icon": "https://static-00.iconduck.com/assets.00/angular-icon-2048x554-ogh7idu0.png",
+      "icon": "https://i.ibb.co/vBcRD0H/vuejs.png",
       "type": "framework",
       "learning": true
     },
     {
       "id": 5,
       "name": "tailwind",
-      "icon": "https://static-00.iconduck.com/assets.00/angular-icon-2048x554-ogh7idu0.png",
+      "icon": "https://i.ibb.co/XSXTSjC/tailwind.png",
       "type": "framework",
       "learning": false
     },
     {
       "id": 6,
       "name": "HTML5",
-      "icon": "https://static-00.iconduck.com/assets.00/angular-icon-2048x554-ogh7idu0.png",
+      "icon": "https://i.ibb.co/p4xnfNc/html5.png",
       "type": "language",
-      "learning": true
+      "learning": false
     },
     {
       "id": 7,
       "name": "CSS3",
-      "icon": "https://static-00.iconduck.com/assets.00/angular-icon-2048x554-ogh7idu0.png",
+      "icon": "https://i.ibb.co/McnYh6q/css3.png",
       "type": "language",
-      "learning": true
+      "learning": false
     },
     {
       "id": 8,
       "name": "javascript",
-      "icon": "https://static-00.iconduck.com/assets.00/angular-icon-2048x554-ogh7idu0.png",
+      "icon": "https://i.ibb.co/kDnG78F/js.png",
       "type": "language",
       "learning": false
     },
     {
       "id": 9,
       "name": "github",
-      "icon": "https://static-00.iconduck.com/assets.00/angular-icon-2048x554-ogh7idu0.png",
+      "icon": "https://i.ibb.co/n18p1zW/github.png",
       "type": "software",
       "learning": false
     },
     {
       "id": 10,
       "name": "figma",
-      "icon": "https://static-00.iconduck.com/assets.00/angular-icon-2048x554-ogh7idu0.png",
+      "icon": "https://i.ibb.co/yywZnCx/figma.png",
       "type": "software",
       "learning": false
     },
     {
       "id": 11,
       "name": "VSCode",
-      "icon": "https://static-00.iconduck.com/assets.00/angular-icon-2048x554-ogh7idu0.png",
+      "icon": "https://i.ibb.co/ccWD0ZH/vscode.png",
       "type": "software",
       "learning": false
     },
     {
       "id": 12,
       "name": "nodeJS",
-      "icon": "https://static-00.iconduck.com/assets.00/angular-icon-2048x554-ogh7idu0.png",
+      "icon": "https://i.ibb.co/YkpZdy1/nodejs.png",
       "type": "software",
       "learning": true
     },
     {
       "id": 13,
       "name": "sanity",
-      "icon": "https://static-00.iconduck.com/assets.00/angular-icon-2048x554-ogh7idu0.png",
+      "icon": "https://i.ibb.co/qMgVGjy/sanity.png",
       "type": "software",
       "learning": false
     }
