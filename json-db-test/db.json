@@ -57,14 +57,14 @@
       "name": "HTML5",
       "icon": "https://i.ibb.co/p4xnfNc/html5.png",
       "type": "language",
-      "learning": false
+      "learning": true
     },
     {
       "id": 7,
       "name": "CSS3",
       "icon": "https://i.ibb.co/McnYh6q/css3.png",
       "type": "language",
-      "learning": false
+      "learning": true
     },
     {
       "id": 8,
@@ -122,8 +122,20 @@
         "https://source.unsplash.com/random/"
       ],
       "techUsed": [
-        "http://localhost:3000/techs/9",
-        "http://localhost:3000/techs/1"
+        {
+          "id": 9,
+          "name": "github",
+          "icon": "https://i.ibb.co/n18p1zW/github.png",
+          "type": "software",
+          "learning": false
+        },
+        {
+          "id": 1,
+          "name": "angular",
+          "icon": "https://i.ibb.co/Xp7cB95/angular.png",
+          "type": "framework",
+          "learning": true
+        }
       ],
       "websiteUrl": "http://google.com"
     },
@@ -139,9 +151,27 @@
         "https://source.unsplash.com/random/"
       ],
       "techUsed": [
-        "http://localhost:3000/techs/3",
-        "http://localhost:3000/techs/6",
-        "http://localhost:3000/techs/13"
+        {
+          "id": 3,
+          "name": "nextJS",
+          "icon": "https://i.ibb.co/8rXYJMN/next.png",
+          "type": "framework",
+          "learning": false
+        },
+        {
+          "id": 6,
+          "name": "HTML5",
+          "icon": "https://i.ibb.co/p4xnfNc/html5.png",
+          "type": "language",
+          "learning": false
+        },
+        {
+          "id": 13,
+          "name": "sanity",
+          "icon": "https://i.ibb.co/qMgVGjy/sanity.png",
+          "type": "software",
+          "learning": false
+        }
       ],
       "websiteUrl": "http://google.com"
     },
@@ -157,9 +187,27 @@
         "https://source.unsplash.com/random/"
       ],
       "techUsed": [
-        "http://localhost:3000/techs/7",
-        "http://localhost:3000/techs/2",
-        "http://localhost:3000/techs/4"
+        {
+          "id": 7,
+          "name": "CSS3",
+          "icon": "https://i.ibb.co/McnYh6q/css3.png",
+          "type": "language",
+          "learning": false
+        },
+        {
+          "id": 2,
+          "name": "react",
+          "icon": "https://i.ibb.co/gFYXNmM/react.png",
+          "type": "framework",
+          "learning": false
+        },
+        {
+          "id": 4,
+          "name": "vueJS",
+          "icon": "https://i.ibb.co/vBcRD0H/vuejs.png",
+          "type": "framework",
+          "learning": true
+        }
       ],
       "websiteUrl": "http://google.com"
     },
@@ -175,9 +223,27 @@
         "https://source.unsplash.com/random/"
       ],
       "techUsed": [
-        "http://localhost:3000/techs/5",
-        "http://localhost:3000/techs/8",
-        "http://localhost:3000/techs/10"
+        {
+          "id": 5,
+          "name": "tailwind",
+          "icon": "https://i.ibb.co/XSXTSjC/tailwind.png",
+          "type": "framework",
+          "learning": false
+        },
+        {
+          "id": 8,
+          "name": "javascript",
+          "icon": "https://i.ibb.co/kDnG78F/js.png",
+          "type": "language",
+          "learning": false
+        },
+        {
+          "id": 10,
+          "name": "figma",
+          "icon": "https://i.ibb.co/yywZnCx/figma.png",
+          "type": "software",
+          "learning": false
+        }
       ],
       "websiteUrl": "http://google.com"
     },
@@ -193,8 +259,20 @@
         "https://source.unsplash.com/random/"
       ],
       "techUsed": [
-        "http://localhost:3000/techs/11",
-        "http://localhost:3000/techs/12"
+        {
+          "id": 11,
+          "name": "VSCode",
+          "icon": "https://i.ibb.co/ccWD0ZH/vscode.png",
+          "type": "software",
+          "learning": false
+        },
+        {
+          "id": 12,
+          "name": "nodeJS",
+          "icon": "https://i.ibb.co/YkpZdy1/nodejs.png",
+          "type": "software",
+          "learning": true
+        }
       ],
       "websiteUrl": "http://google.com"
     }

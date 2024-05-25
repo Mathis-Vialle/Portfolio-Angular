@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { Observable, map } from 'rxjs';
 import { ProjectListItem } from '../../models/project-list-item.model';
-import { LandingPageServices } from '../../services/landing-page.service';
+import { PagesServices } from '../../services/pages.service';
 import { RouterModule } from '@angular/router';
 import {
   animate,
@@ -34,7 +34,7 @@ export class LpProjectListComponent implements OnInit {
 
   openProject: { [key: number]: true | false } = {};
 
-  constructor(private lpService: LandingPageServices) {}
+  constructor(private lpService: PagesServices) {}
 
   ngOnInit(): void {
     this.projects$ = this.lpService.getProjectList();

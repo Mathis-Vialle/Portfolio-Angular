@@ -1,0 +1,35 @@
+<div class="pf-content">
+  <span class="pf-content-bg"></span>
+  <div class="content-container">
+    @for(project of projects$ | async; track project.id) {
+    <div class="pf-content-project">
+      <h2 class="pf-content-project-side-title">
+        {{ project.title | uppercase }}
+      </h2>
+      <div class="pf-content-project-core">
+        <div class="pf-content-project-core-summary">
+          <h3 class="pf-content-project-core-subtitle">Summary</h3>
+          <p>{{ project.summary }}</p>
+        </div>
+        <div class="pf-content-project-core-preview">
+          <h3 class="pf-content-project-core-subtitle">Preview</h3>
+        </div>
+        <div class="pf-content-project-core-techs">
+          <h3 class="pf-content-project-core-subtitle">Technologies used</h3>
+          <div>
+            @for (tech of project.techUsed; track tech.id) {
+            <a (click)="getTechDetails(tech.id, project.id)">
+              <img [src]="tech.icon" [alt]="tech.name" />
+            </a>
+            }
+            <p>
+              @if (techDetails[project.id].value !== '')
+              {{{techDetails[project.id].value | titlecase}}}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    }
+  </div>
+</div>

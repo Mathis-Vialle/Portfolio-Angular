@@ -1,0 +1,51 @@
+.pf-content {
+  position: relative;
+  margin: auto;
+  margin-bottom: 16px;
+
+  &-bg {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: auto;
+    width: 1280px;
+    height: 100%;
+    background-color: white;
+    border-radius: 24px;
+  }
+
+  &-project {
+    display: flex;
+    gap: 64px;
+    width: 100%;
+    padding: 80px 0;
+    justify-content: center;
+
+    &:nth-of-type(even) {
+      flex-direction: row-reverse;
+    }
+
+    &-side-title {
+      font-family: "Abril Fatface", serif;
+      font-size: 128px;
+      font-weight: 400;
+      writing-mode: vertical-rl;
+      transform: scale(-1);
+      margin: 0;
+      padding: 0;
+    }
+
+    &-core {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+
+      &-subtitle {
+        font-size: 24px;
+        font-weight: 600;
+        margin: 0;
+        margin-bottom: 8px;
+      }
+    }
+  }
+}

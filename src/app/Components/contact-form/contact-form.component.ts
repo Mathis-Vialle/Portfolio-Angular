@@ -8,7 +8,7 @@ import {
   Validators,
 } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
-import { LandingPageServices } from '../../services/landing-page.service';
+import { PagesServices } from '../../services/pages.service';
 import { tap } from 'rxjs';
 
 @Component({
@@ -24,7 +24,7 @@ export class ContactFormComponent {
 
   constructor(
     private fb: FormBuilder,
-    private lpService: LandingPageServices,
+    private lpService: PagesServices,
     private snackBar: MatSnackBar
   ) {}
 

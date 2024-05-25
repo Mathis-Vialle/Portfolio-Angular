@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { TitleScreenComponent } from '../../Components/title-screen/title-screen.component';
 import { TitleScreenItem } from '../../models/titleScreenItem.model';
-import { LandingPageContentComponent } from '../../Components/landing-page-content/landing-page-content.component';
+import { LandingPageContentComponent } from '../../Components/page-content-landing/landing-page-content.component';
 
 @Component({
   selector: 'app-landing-page',

@@ -24,6 +24,13 @@ export const routes: Routes = [
       ),
   },
   {
+    path: 'portfolio',
+    loadChildren: () =>
+      import('./pages/portfolio-page/portfolio-page.routes').then(
+        (r) => r.portfolioPageRoutes
+      ),
+  },
+  {
     path: 'test',
     component: LpProjectListComponent,
   },

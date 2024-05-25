@@ -5,6 +5,6 @@ export class ProjectListItem {
   title!: string;
   summary!: string;
   imgsUrl!: string[];
-  techUsed!: string[];
+  techUsed!: Techs[];
   websiteUrl!: string;
 }
