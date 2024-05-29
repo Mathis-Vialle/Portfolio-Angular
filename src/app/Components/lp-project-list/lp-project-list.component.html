@@ -11,10 +11,12 @@
     @if (openProject[project.id] === true) {
     <div [@fade] style="overflow: hidden">
       <div class="list-item-content">
-        <p>{{ project.summary }}</p>
+        <p [innerHTML]="project.summary"></p>
       </div>
       <div class="link">
-        <a [routerLink]="" class="link-text">See more</a>
+        <a [routerLink]="'/portfolio/project/' + project.id" class="link-text"
+          >See more</a
+        >
       </div>
     </div>
     }

@@ -1,29 +1,44 @@
+import { TitleScreenItem } from './../../models/titleScreenItem.model';
+import { PagesServices } from './../../services/pages.service';
 import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
-import { Observable, map, tap } from 'rxjs';
+import { Observable, map, switchMap, take } from 'rxjs';
 import { ProjectListItem } from '../../models/project-list-item.model';
-import { PagesServices } from '../../services/pages.service';
+import { ActivatedRoute, Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { TitleScreenComponent } from '../title-screen/title-screen.component';
 
 @Component({
-  selector: 'app-page-content-portfolio',
+  selector: 'app-single-project-page',
   standalone: true,
-  imports: [CommonModule],
-  templateUrl: './page-content-portfolio.component.html',
-  styleUrl: './page-content-portfolio.component.scss',
+  imports: [CommonModule, TitleScreenComponent],
+  templateUrl: './single-project-page.component.html',
+  styleUrl: './single-project-page.component.scss',
 })
-export class PageContentPortfolioComponent implements OnInit {
-  projects$!: Observable<ProjectListItem[]>;
+export class SingleProjectPageComponent implements OnInit {
+  project$!: Observable<ProjectListItem>;
   techDetails: { [key: number]: { name: string; text: string } } = {};
   selectedImg: { [key: number]: number } = {};
+  titleScreenItem!: TitleScreenItem;
 
   constructor(
-    private pfServices: PagesServices,
+    private pageService: PagesServices,
+    private route: ActivatedRoute,
+    private router: Router,
     private cdref: ChangeDetectorRef
   ) {}
 
   ngOnInit(): void {
     this.initObservables();
+    this.initLoops();
+  }
 
+  initObservables() {
+    this.project$ = this.route.params.pipe(
+      switchMap((params) => this.pageService.getProjectById(+params['id']))
+    );
+  }
+
+  initLoops() {
     for (let i = 1; i <= 5; i++) {
       this.techDetails[i] = { name: '', text: '' };
     }
@@ -31,14 +46,6 @@ export class PageContentPortfolioComponent implements OnInit {
     for (let i = 1; i <= 5; i++) {
       this.selectedImg[i] = 0;
     }
-  }
-
-  ngAfterContentChecked() {
-    this.cdref.detectChanges();
-  }
-
-  initObservables() {
-    this.projects$ = this.pfServices.getProjectList();
   }
 
   getTechDetails(techId: number, projectId: number) {
@@ -100,5 +107,13 @@ export class PageContentPortfolioComponent implements OnInit {
 
   getSelectedImage(imgIndex: number, projectId: number) {
     this.selectedImg[projectId] = imgIndex;
+  }
+
+  onGoBack() {
+    this.router.navigateByUrl('/portfolio');
+  }
+
+  ngAfterContentChecked() {
+    this.cdref.detectChanges();
   }
 }

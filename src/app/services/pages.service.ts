@@ -16,6 +16,14 @@ export class PagesServices {
     return this.http.get<ProjectListItem[]>(environment.API_PROJECTS);
   }
 
+  getProjectById(projectId: number): Observable<ProjectListItem> {
+    return this.getProjectList().pipe(
+      map(
+        (projects) => projects.filter((project) => project.id === projectId)[0]
+      )
+    );
+  }
+
   sendEmail(emailFormValue: Email): Observable<boolean> {
     return this.http.post(`${environment.API_MAILS}`, emailFormValue).pipe(
       map(() => true),

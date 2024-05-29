@@ -1,11 +1,13 @@
+@if (project$ | async; as project) {
+<app-title-screen
+  [titleScreen]="{ title: project.title, subtitle: '' }"
+></app-title-screen>
+}
 <div class="pf-content">
   <span class="pf-content-bg"></span>
   <div class="content-container">
-    @for(project of projects$ | async; track project.id) {
+    @if(project$ | async; as project) {
     <div class="pf-content-project">
-      <h2 class="pf-content-project-side-title">
-        {{ project.title | uppercase }}
-      </h2>
       <div class="pf-content-project-core">
         <div class="pf-content-project-core-summary">
           <h3 class="pf-content-project-core-subtitle">Summary</h3>
@@ -63,6 +65,7 @@
           </div>
         </div>
         <div class="pf-content-project-core-actions">
+          <button (click)="onGoBack()"><p>View other projects</p></button>
           <a [href]="project.websiteUrl"><p>Visit the website</p></a>
         </div>
       </div>
