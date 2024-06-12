@@ -42,7 +42,7 @@ testem.log
 Thumbs.db
 
 # Environment files
-/src/environments/*
+/src/environments/environment.development.ts
 .env
 
 # Previous database & services
