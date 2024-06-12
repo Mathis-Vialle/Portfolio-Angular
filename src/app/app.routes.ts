@@ -30,9 +30,5 @@ export const routes: Routes = [
         (r) => r.portfolioPageRoutes
       ),
   },
-  {
-    path: 'test',
-    component: LpProjectListComponent,
-  },
   { path: '**', redirectTo: 'home' },
 ];
