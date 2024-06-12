@@ -1,0 +1,96 @@
+<form [formGroup]="contactMainForm" class="form">
+  <div class="form-row">
+    <div>
+      <input
+        type="text"
+        name="firstName"
+        formControlName="firstName"
+        placeholder="Prénom"
+        class="form-cell"
+        [ngClass]="{
+          'form-cell-error': f['firstName'].errors && f['firstName'].touched
+        }"
+      />
+      @if (f['firstName'].errors && f['firstName'].touched) {
+      <p class="form-error">{{ getFormCtrlErrorText(f["firstName"]) }}</p>
+      }
+    </div>
+    <div>
+      <input
+        type="text"
+        name="lastName"
+        formControlName="lastName"
+        placeholder="Nom"
+        class="form-cell"
+        [ngClass]="{
+          'form-cell-error': f['lastName'].errors && f['lastName'].touched
+        }"
+      />
+      @if (f['lastName'].errors && f['lastName'].touched) {
+      <p class="form-error">{{ getFormCtrlErrorText(f["lastName"]) }}</p>
+      }
+    </div>
+  </div>
+  <div class="form-row">
+    <div>
+      <input
+        type="email"
+        name="email"
+        formControlName="email"
+        placeholder="Email"
+        class="form-cell"
+        email
+        [ngClass]="{
+          'form-cell-error': f['email'].errors && f['email'].touched
+        }"
+      />
+      @if (f['email'].errors && f['email'].touched) {
+      <p class="form-error">{{ getFormCtrlErrorText(f["email"]) }}</p>
+      }
+    </div>
+  </div>
+  <div class="form-row">
+    <div>
+      <input
+        type="text"
+        name="subject"
+        formControlName="subject"
+        placeholder="Sujet"
+        class="form-cell"
+        [ngClass]="{
+          'form-cell-error': f['subject'].errors && f['subject'].touched
+        }"
+      />
+      @if (f['subject'].errors && f['subject'].touched) {
+      <p class="form-error">{{ getFormCtrlErrorText(f["subject"]) }}</p>
+      }
+    </div>
+  </div>
+  <div class="form-row">
+    <div>
+      <textarea
+        name="message"
+        formControlName="message"
+        placeholder="Message"
+        class="form-cell"
+        rows="10"
+        [ngClass]="{
+          'form-cell-error': f['message'].errors && f['message'].touched
+        }"
+      ></textarea>
+      @if (f['message'].errors && f['message'].touched) {
+      <p class="form-error">{{ getFormCtrlErrorText(f["message"]) }}</p>
+      }
+    </div>
+  </div>
+  <button
+    type="submit"
+    [ngClass]="
+      contactMainForm.valid ? 'form-submit-valid' : 'form-submit-false'
+    "
+    class="form-submit"
+    [disabled]="!contactMainForm.valid"
+  >
+    @if (isLoading) { Loading... } @else { Envoyer }
+  </button>
+</form>

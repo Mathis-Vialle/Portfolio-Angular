@@ -1,0 +1,229 @@
+@media screen and (min-width: 1300px) {
+  .list {
+    list-style: none;
+    color: #1e1e1e;
+    padding: 16px;
+
+    &-item {
+      padding: 16px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      overflow: hidden;
+
+      .link {
+        width: 100%;
+        display: flex;
+        justify-content: end;
+
+        &-text {
+          font-weight: 600;
+          font-size: 16px;
+          overflow: hidden;
+          cursor: pointer;
+          position: relative;
+          text-decoration: none;
+          margin-right: 16px;
+          color: #1e1e1e;
+
+          &::before {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 1px;
+            bottom: 0;
+            left: 0;
+            background-color: black;
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+          }
+
+          &:hover::before {
+            transform: scaleX(1);
+          }
+        }
+      }
+
+      &-title {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+        cursor: pointer;
+
+        &-text {
+          font-weight: 400;
+          font-size: 36px;
+          padding: 0;
+          margin: 0;
+        }
+      }
+
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+        transition: 0.2s;
+
+        &:nth-of-type(odd) {
+          .list-item-title {
+            padding-left: 8px;
+            transition: 0.2s;
+          }
+        }
+        &:nth-of-type(even) {
+          .list-item-title {
+            padding-right: 8px;
+            transition: 0.2s;
+          }
+        }
+      }
+
+      &:nth-of-type(even) &-title {
+        justify-content: end;
+      }
+
+      &:not(:hover) {
+        .list-item-title {
+          transition: 1s;
+        }
+      }
+
+      &-content {
+        display: flex;
+        justify-content: space-between;
+        padding: 16px;
+
+        p {
+          text-align: justify;
+        }
+      }
+
+      &:not(:last-child) {
+        border-bottom: 1px solid black;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1299px) {
+  .list {
+    list-style: none;
+    color: #1e1e1e;
+    padding: 0;
+    margin: 0;
+
+    &-item {
+      padding: 16px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      overflow: hidden;
+
+      .link {
+        width: 100%;
+        display: flex;
+        justify-content: end;
+
+        &-text {
+          font-weight: 600;
+          font-size: 16px;
+          overflow: hidden;
+          cursor: pointer;
+          position: relative;
+          text-decoration: none;
+          margin-right: 16px;
+          color: #1e1e1e;
+
+          &::before {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 1px;
+            bottom: 0;
+            left: 0;
+            background-color: black;
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+          }
+
+          &:hover::before {
+            transform: scaleX(1);
+          }
+        }
+      }
+
+      &-title {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+        cursor: pointer;
+
+        &-text {
+          font-weight: 400;
+          font-size: 36px;
+          padding: 0;
+          margin: 0;
+        }
+      }
+
+      &:nth-of-type(even) &-title {
+        justify-content: end;
+      }
+
+      &-content {
+        display: flex;
+        justify-content: space-between;
+        padding: 16px;
+
+        p {
+          text-align: justify;
+        }
+      }
+
+      &:not(:last-child) {
+        border-bottom: 1px solid black;
+      }
+    }
+  }
+}
+
+// PlusMinus css start
+
+.button {
+  width: 30px;
+  height: 30px;
+  transform: rotate(0deg);
+  transition: 0.4s cubic-bezier(0.2, 0.6, 0.3, 1.1);
+}
+
+.button:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 2px;
+  width: 100%;
+  background: black;
+}
+
+.button:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: 2px;
+  background: black;
+}
+
+.button.clicked {
+  transform: rotate(180deg);
+}
+
+.button.clicked:before {
+  width: 0;
+}
+
+// PlusMinus css end

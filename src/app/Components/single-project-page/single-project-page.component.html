@@ -1,0 +1,93 @@
+@if (project$ | async; as project) {
+<app-title-screen
+  [titleScreen]="{ title: project.title, subtitle: '' }"
+></app-title-screen>
+<div class="pf-content">
+  <span class="pf-content-bg"></span>
+  <div class="content-container">
+    <div class="pf-content-project">
+      <div class="pf-content-project-core">
+        <div class="pf-content-project-core-summary">
+          <h3 class="pf-content-project-core-subtitle">Résumé</h3>
+          <p [innerHTML]="project.summary"></p>
+        </div>
+        <div class="pf-content-project-core-preview">
+          <h3 class="pf-content-project-core-subtitle">Aperçu</h3>
+          <div class="pf-content-project-core-preview-images">
+            <div
+              class="main-image-container"
+              (click)="showModal(imageUrl(project.imgs[selectedImg]).url())"
+            >
+              <img
+                [src]="imageUrl(project.imgs[selectedImg]).width(400).url()"
+                [alt]="project.title + ' main image'"
+                class="main-image"
+              />
+            </div>
+            <div class="pf-content-project-core-preview-images-small">
+              @for (img of project.imgs; track $index) {
+              <div
+                class="small-imgs-container"
+                [ngClass]="selectedImg === $index ? 'small-img-active' : ''"
+                (click)="getSelectedImage($index)"
+              >
+                <img
+                  [src]="imageUrl(img).width(75).url()"
+                  [alt]="project.title + ' image number ' + ($index + 1)"
+                  class="small-imgs"
+                />
+              </div>
+              }
+            </div>
+          </div>
+        </div>
+        <div class="pf-content-project-core-techs">
+          <h3 class="pf-content-project-core-subtitle">
+            Technologies utilisées
+          </h3>
+          <div class="pf-content-project-core-techs-details">
+            <div class="pf-content-project-core-techs-details-icons">
+              @for (tech of project.techsRef; track tech._id) {
+              <a
+                (click)="getTechDetails(project, $index)"
+                [ngClass]="
+                  techDetails.name.toLowerCase() === tech.title.toLowerCase()
+                    ? 'active'
+                    : ''
+                "
+              >
+                <img
+                  [src]="imageUrl(tech.icon).width(48).url()"
+                  [alt]="tech.title"
+                />
+              </a>
+              }
+            </div>
+            <p class="pf-content-project-core-techs-details-text">
+              @if (techDetails.name !== '') {
+              <b>{{ techDetails.name }}</b
+              >, {{ techDetails.text }}
+              } @else {
+              {{ getTechDetails(project, 0) }}
+              }
+            </p>
+          </div>
+        </div>
+        <div class="pf-content-project-core-actions">
+          <button (click)="onGoBack()"><p>Voir les autres projets</p></button>
+          <a [href]="checkLink(project.projectUrl)" [target]="target">
+            <p>Visiter le site</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="img-modal" id="img-modal">
+    <div class="modal-content">
+      <span class="close" (click)="closeModal()">&times;</span>
+      <img [src]="modalImg" class="modal-image" />
+    </div>
+    <div class="modal-bg" (click)="closeModal()"></div>
+  </div>
+</div>
+}

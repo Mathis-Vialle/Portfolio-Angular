@@ -1,0 +1,16 @@
+<div
+  class="tis-content"
+  [ngClass]="{
+    inverted: imgPos
+  }"
+>
+  <img class="tis-content-img" [src]="imgData.imgUrl" [alt]="imgData.imgAlt" />
+  <div>
+    <p class="tis-content-text" id="clamped-text">
+      <ng-content />
+    </p>
+    @if (!showMore && screenWidth < 890){
+    <span class="more" (click)="showMoreFn()">Voir plus</span>
+    }
+  </div>
+</div>

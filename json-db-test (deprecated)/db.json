@@ -1,0 +1,318 @@
+{
+  "techs": [
+    {
+      "id": 1,
+      "name": "angular",
+      "icon": "https://i.ibb.co/Xp7cB95/angular.png",
+      "type": "framework",
+      "learning": true
+    },
+    {
+      "id": 2,
+      "name": "react",
+      "icon": "https://i.ibb.co/gFYXNmM/react.png",
+      "type": "framework",
+      "learning": false
+    },
+    {
+      "id": 3,
+      "name": "nextJS",
+      "icon": "https://i.ibb.co/8rXYJMN/next.png",
+      "type": "framework",
+      "learning": false
+    },
+    {
+      "id": 4,
+      "name": "vueJS",
+      "icon": "https://i.ibb.co/vBcRD0H/vuejs.png",
+      "type": "framework",
+      "learning": true
+    },
+    {
+      "id": 5,
+      "name": "tailwind",
+      "icon": "https://i.ibb.co/XSXTSjC/tailwind.png",
+      "type": "framework",
+      "learning": false
+    },
+    {
+      "id": 6,
+      "name": "HTML5",
+      "icon": "https://i.ibb.co/p4xnfNc/html5.png",
+      "type": "language",
+      "learning": true
+    },
+    {
+      "id": 7,
+      "name": "CSS3",
+      "icon": "https://i.ibb.co/McnYh6q/css3.png",
+      "type": "language",
+      "learning": true
+    },
+    {
+      "id": 8,
+      "name": "javascript",
+      "icon": "https://i.ibb.co/kDnG78F/js.png",
+      "type": "language",
+      "learning": false
+    },
+    {
+      "id": 9,
+      "name": "github",
+      "icon": "https://i.ibb.co/n18p1zW/github.png",
+      "type": "software",
+      "learning": false
+    },
+    {
+      "id": 10,
+      "name": "figma",
+      "icon": "https://i.ibb.co/yywZnCx/figma.png",
+      "type": "software",
+      "learning": false
+    },
+    {
+      "id": 11,
+      "name": "VSCode",
+      "icon": "https://i.ibb.co/ccWD0ZH/vscode.png",
+      "type": "software",
+      "learning": false
+    },
+    {
+      "id": 12,
+      "name": "nodeJS",
+      "icon": "https://i.ibb.co/YkpZdy1/nodejs.png",
+      "type": "software",
+      "learning": true
+    },
+    {
+      "id": 13,
+      "name": "sanity",
+      "icon": "https://i.ibb.co/qMgVGjy/sanity.png",
+      "type": "software",
+      "learning": false
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "Portfolio",
+      "summary": "This project was just a way for me to train technologies that I’m currently learning and to show what I can do at my current level without any real goal in terms of client requirements or time limit (and also to have a bit of fun about the content and the look of the website).<br/><br/> It allowed me to really explore and understand more of what I can do at the moment with Angular, and I’ll either update it frequently or create some brand new projects to challenge me even further throughout my learning journey !",
+      "imgsUrl": [
+        "https://picsum.photos/400",
+        "https://picsum.photos/401",
+        "https://picsum.photos/402",
+        "https://picsum.photos/403",
+        "https://picsum.photos/404",
+        "https://picsum.photos/405"
+      ],
+      "techUsed": [
+        {
+          "id": 9,
+          "name": "github",
+          "icon": "https://i.ibb.co/n18p1zW/github.png",
+          "type": "software",
+          "learning": false
+        },
+        {
+          "id": 1,
+          "name": "angular",
+          "icon": "https://i.ibb.co/Xp7cB95/angular.png",
+          "type": "framework",
+          "learning": true
+        }
+      ],
+      "websiteUrl": "http://google.com"
+    },
+    {
+      "id": 2,
+      "title": "Oiloftrop",
+      "summary": "This project was just a way for me to train technologies that I’m currently learning and to show what I can do at my current level without any real goal in terms of client requirements or time limit (and also to have a bit of fun about the content and the look of the website).<br/><br/> It allowed me to really explore and understand more of what I can do at the moment with Angular, and I’ll either update it frequently or create some brand new projects to challenge me even further throughout my learning journey !",
+      "imgsUrl": [
+        "https://picsum.photos/406",
+        "https://picsum.photos/407",
+        "https://picsum.photos/408",
+        "https://picsum.photos/409",
+        "https://picsum.photos/410",
+        "https://picsum.photos/411",
+        "https://picsum.photos/412",
+        "https://picsum.photos/413",
+        "https://picsum.photos/414",
+        "https://picsum.photos/415"
+      ],
+      "techUsed": [
+        {
+          "id": 3,
+          "name": "nextJS",
+          "icon": "https://i.ibb.co/8rXYJMN/next.png",
+          "type": "framework",
+          "learning": false
+        },
+        {
+          "id": 6,
+          "name": "HTML5",
+          "icon": "https://i.ibb.co/p4xnfNc/html5.png",
+          "type": "language",
+          "learning": false
+        },
+        {
+          "id": 13,
+          "name": "sanity",
+          "icon": "https://i.ibb.co/qMgVGjy/sanity.png",
+          "type": "software",
+          "learning": false
+        }
+      ],
+      "websiteUrl": "http://google.com"
+    },
+    {
+      "id": 3,
+      "title": "Folioport",
+      "summary": "This project was just a way for me to train technologies that I’m currently learning and to show what I can do at my current level without any real goal in terms of client requirements or time limit (and also to have a bit of fun about the content and the look of the website).<br/><br/> It allowed me to really explore and understand more of what I can do at the moment with Angular, and I’ll either update it frequently or create some brand new projects to challenge me even further throughout my learning journey !",
+      "imgsUrl": [
+        "https://picsum.photos/416",
+        "https://picsum.photos/417",
+        "https://picsum.photos/418",
+        "https://picsum.photos/419"
+      ],
+      "techUsed": [
+        {
+          "id": 7,
+          "name": "CSS3",
+          "icon": "https://i.ibb.co/McnYh6q/css3.png",
+          "type": "language",
+          "learning": false
+        },
+        {
+          "id": 2,
+          "name": "react",
+          "icon": "https://i.ibb.co/gFYXNmM/react.png",
+          "type": "framework",
+          "learning": false
+        },
+        {
+          "id": 4,
+          "name": "vueJS",
+          "icon": "https://i.ibb.co/vBcRD0H/vuejs.png",
+          "type": "framework",
+          "learning": true
+        }
+      ],
+      "websiteUrl": "http://google.com"
+    },
+    {
+      "id": 4,
+      "title": "Tropoilof",
+      "summary": "This project was just a way for me to train technologies that I’m currently learning and to show what I can do at my current level without any real goal in terms of client requirements or time limit (and also to have a bit of fun about the content and the look of the website).<br/><br/> It allowed me to really explore and understand more of what I can do at the moment with Angular, and I’ll either update it frequently or create some brand new projects to challenge me even further throughout my learning journey !",
+      "imgsUrl": [
+        "https://picsum.photos/421",
+        "https://picsum.photos/422",
+        "https://picsum.photos/423",
+        "https://picsum.photos/424",
+        "https://picsum.photos/425"
+      ],
+      "techUsed": [
+        {
+          "id": 5,
+          "name": "tailwind",
+          "icon": "https://i.ibb.co/XSXTSjC/tailwind.png",
+          "type": "framework",
+          "learning": false
+        },
+        {
+          "id": 8,
+          "name": "javascript",
+          "icon": "https://i.ibb.co/kDnG78F/js.png",
+          "type": "language",
+          "learning": false
+        },
+        {
+          "id": 10,
+          "name": "figma",
+          "icon": "https://i.ibb.co/yywZnCx/figma.png",
+          "type": "software",
+          "learning": false
+        }
+      ],
+      "websiteUrl": "http://google.com"
+    },
+    {
+      "id": 5,
+      "title": "Error 404",
+      "summary": "This project was just a way for me to train technologies that I’m currently learning and to show what I can do at my current level without any real goal in terms of client requirements or time limit (and also to have a bit of fun about the content and the look of the website).<br/><br/> It allowed me to really explore and understand more of what I can do at the moment with Angular, and I’ll either update it frequently or create some brand new projects to challenge me even further throughout my learning journey !",
+      "imgsUrl": [
+        "https://picsum.photos/426",
+        "https://picsum.photos/427",
+        "https://picsum.photos/428",
+        "https://picsum.photos/429",
+        "https://picsum.photos/430"
+      ],
+      "techUsed": [
+        {
+          "id": 11,
+          "name": "VSCode",
+          "icon": "https://i.ibb.co/ccWD0ZH/vscode.png",
+          "type": "software",
+          "learning": false
+        },
+        {
+          "id": 12,
+          "name": "nodeJS",
+          "icon": "https://i.ibb.co/YkpZdy1/nodejs.png",
+          "type": "software",
+          "learning": true
+        }
+      ],
+      "websiteUrl": "http://google.com"
+    }
+  ],
+  "mails": [
+    {
+      "firstName": "Test",
+      "lastName": "Mail",
+      "email": "contactForm@test.com",
+      "subject": "Test mail via contact form",
+      "message": "Ceci est un test",
+      "id": 1
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Loading",
+      "email": "contactForm@test.com",
+      "subject": "Test loading while sending",
+      "message": "test",
+      "id": 2
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Snackbar",
+      "email": "contactForm@test.com",
+      "subject": "Test snackbar",
+      "message": "test",
+      "id": 3
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Snackbar²",
+      "email": "contactForm@test.com",
+      "subject": "Test snackbar²",
+      "message": "test snackbar",
+      "id": 4
+    },
+    {
+      "firstName": "Ta femme",
+      "lastName": "Mme VIALLE",
+      "email": "angeline.maciag@gmail",
+      "subject": "Je t'aimeuh",
+      "message": "BLBLBL",
+      "id": 5
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Component",
+      "email": "contactForm@test.com",
+      "subject": "Test component contact form",
+      "message": "test component",
+      "id": 6
+    }
+  ]
+}
