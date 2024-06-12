@@ -1,34 +1,36 @@
-import { HttpClient } from '@angular/common/http';
-import { Injectable } from '@angular/core';
-import { Observable, filter, map } from 'rxjs';
-import { environment } from '../../environments/environment.development';
-import { Techs } from '../models/techs.model';
+// Deprecated file, kept if needed later / in other projects
 
-@Injectable({
-  providedIn: 'root',
-})
-export class TechsService {
-  constructor(private http: HttpClient) {}
+// import { HttpClient } from '@angular/common/http';
+// import { Injectable } from '@angular/core';
+// import { Observable, filter, map } from 'rxjs';
+// import { environment } from '../../environments/environment.development';
+// import { Techs } from '../models/techs.model';
 
-  getTechs(): Observable<Techs[]> {
-    return this.http.get<Techs[]>(environment.API_TECHS);
-  }
+// @Injectable({
+//   providedIn: 'root',
+// })
+// export class TechsService {
+//   constructor(private http: HttpClient) {}
 
-  getFrameworks(): Observable<Techs[]> {
-    return this.getTechs().pipe(
-      map((techs) => techs.filter((tech) => tech.type === 'framework'))
-    );
-  }
+//   getTechs(): Observable<Techs[]> {
+//     return this.http.get<Techs[]>(environment.API_TECHS);
+//   }
 
-  getLanguages(): Observable<Techs[]> {
-    return this.getTechs().pipe(
-      map((techs) => techs.filter((tech) => tech.type === 'language'))
-    );
-  }
+//   getFrameworks(): Observable<Techs[]> {
+//     return this.getTechs().pipe(
+//       map((techs) => techs.filter((tech) => tech.type === 'framework'))
+//     );
+//   }
 
-  getSoftwares(): Observable<Techs[]> {
-    return this.getTechs().pipe(
-      map((techs) => techs.filter((tech) => tech.type === 'software'))
-    );
-  }
-}
+//   getLanguages(): Observable<Techs[]> {
+//     return this.getTechs().pipe(
+//       map((techs) => techs.filter((tech) => tech.type === 'language'))
+//     );
+//   }
+
+//   getSoftwares(): Observable<Techs[]> {
+//     return this.getTechs().pipe(
+//       map((techs) => techs.filter((tech) => tech.type === 'software'))
+//     );
+//   }
+// }

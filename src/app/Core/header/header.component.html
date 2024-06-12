@@ -1,10 +1,41 @@
 <div class="nav-container">
   <div class="fixed">
-    <div class="navbar">
-      <a routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="nav-item">HOME</a>
+    @if (screenWidth < 1024) {
+    <div
+      class="wrap"
+      (click)="onToggle()"
+      [ngClass]="{
+        'wrap-active': mobileToggle
+      }"
+    >
+      <div class="buns">
+        <div class="cheese"></div>
+        <div class="cheese"></div>
+        <div class="cheese"></div>
+      </div>
+    </div>
+    } @if (screenWidth >= 1024 || mobileToggle) {
+    <div class="navbar" [@fade]>
+      <a
+        routerLink=""
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        class="nav-item"
+        (click)="close()"
+      >
+        ACCUEIL
+      </a>
       @for (navItem of navItems; track navItem.id) {
-      <a routerLink="{{ navItem.url }}" routerLinkActive="active" class="nav-item"> {{ navItem.text | uppercase }} </a>
+      <a
+        routerLink="{{ navItem.url }}"
+        routerLinkActive="active"
+        class="nav-item"
+        (click)="close()"
+      >
+        {{ navItem.text | uppercase }}
+      </a>
       }
     </div>
+    }
   </div>
 </div>

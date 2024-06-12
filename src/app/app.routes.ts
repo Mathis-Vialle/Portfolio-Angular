@@ -24,7 +24,7 @@ export const routes: Routes = [
       ),
   },
   {
-    path: 'portfolio',
+    path: 'projects',
     loadChildren: () =>
       import('./pages/portfolio-page/portfolio-page.routes').then(
         (r) => r.portfolioPageRoutes

@@ -1,11 +1,7 @@
-import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { TitleScreenComponent } from '../../Components/title-screen/title-screen.component';
 import { TitleScreenItem } from '../../models/titleScreenItem.model';
 import { AboutPageContentComponent } from '../../Components/page-content-about/about-page-content.component';
-import { Techs } from '../../models/techs.model';
-import { TechsService } from '../../services/techs.service';
-import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-about-page',
@@ -19,8 +15,8 @@ export class AboutPageComponent implements OnInit {
 
   ngOnInit(): void {
     this.aboutPageTitle = {
-      title: 'About',
-      subtitle: 'Learn a bit more about me',
+      title: 'À Propos',
+      subtitle: 'Apprenez-en plus sur moi',
     };
   }
 }

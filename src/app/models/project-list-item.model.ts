@@ -1,10 +1,14 @@
 import { Techs } from './techs.model';
 
 export class ProjectListItem {
-  id!: number;
+  _id!: string;
   title!: string;
   summary!: string;
-  imgsUrl!: string[];
-  techUsed!: Techs[];
-  websiteUrl!: string;
+  imgs!: {}[];
+  techsUsed!: {
+    tech: {};
+    techUsage: string;
+  }[];
+  projectUrl!: string;
+  techsRef!: Techs[];
 }

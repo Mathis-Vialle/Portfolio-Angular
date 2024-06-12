@@ -1,88 +1,123 @@
-.title-screen {
-  width: 100%;
-  height: calc(100vh - 32px);
-  position: relative;
+@media screen and (min-width: 1300px) {
+  .title-screen {
+    width: 100%;
+    height: calc(100vh - 32px);
+    max-height: 1080px;
+    position: relative;
 
-  .title-screen-container {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: white;
-    gap: 56px;
+    .title-screen-container {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: white;
+      gap: 56px;
 
-    .title {
-      font-family: "Abril Fatface", serif;
-      font-size: 120px;
-      font-weight: 400;
-      margin: 0;
-      line-height: 0.8;
-    }
+      .title {
+        font-family: "Abril Fatface", serif;
+        font-size: 120px;
+        font-weight: 400;
+        margin: 0;
+        line-height: 0.8;
+      }
 
-    .subtitle {
-      font-size: 40px;
-      font-weight: 400;
-      margin: 0;
-      margin-left: 16px;
+      .subtitle {
+        font-size: 40px;
+        font-weight: 400;
+        margin: 0;
+        margin-left: 16px;
+      }
     }
   }
+}
 
-  .scroll-downs {
-    position: absolute;
-    right: 0;
-    bottom: 32px;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    align-items: center;
+@media screen and (max-width: 1299px) {
+  .title-screen {
     width: 100%;
+    height: 100vh;
+    position: relative;
 
-    span {
-      font-size: 18px;
+    &-container {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       color: white;
+      gap: 48px;
+      padding: 16px;
+
+      .title {
+        font-family: "Abril Fatface", serif;
+        font-size: 62px;
+        font-weight: 400;
+        margin: 0;
+        line-height: 0.8;
+      }
+
+      .subtitle {
+        font-size: 24px;
+        font-weight: 400;
+        margin: 0;
+      }
+    }
+  }
+}
+
+.scroll-downs {
+  position: absolute;
+  right: 0;
+  bottom: 32px;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  width: 100%;
+
+  span {
+    font-size: 18px;
+    color: white;
+  }
+
+  .mousey {
+    width: 3px;
+    padding: 10px 15px;
+    height: 35px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    opacity: 0.75;
+    box-sizing: content-box;
+  }
+
+  .scroller {
+    width: 3px;
+    height: 10px;
+    border-radius: 25%;
+    background-color: #fff;
+    animation-name: scroll;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes scroll {
+    0% {
+      opacity: 0;
     }
 
-    .mousey {
-      width: 3px;
-      padding: 10px 15px;
-      height: 35px;
-      border: 2px solid #fff;
-      border-radius: 25px;
-      opacity: 0.75;
-      box-sizing: content-box;
+    20% {
+      transform: translateY(0);
+      opacity: 1;
     }
 
-    .scroller {
-      width: 3px;
-      height: 10px;
-      border-radius: 25%;
-      background-color: #fff;
-      animation-name: scroll;
-      animation-duration: 3s;
-      animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
-      animation-iteration-count: infinite;
+    70% {
+      transform: translateY(25px);
+      opacity: 0;
     }
 
-    @keyframes scroll {
-      0% {
-        opacity: 0;
-      }
-
-      20% {
-        transform: translateY(0);
-        opacity: 1;
-      }
-
-      70% {
-        transform: translateY(25px);
-        opacity: 0;
-      }
-
-      100% {
-        transform: translateY(25px);
-        opacity: 0;
-      }
+    100% {
+      transform: translateY(25px);
+      opacity: 0;
     }
   }
 }

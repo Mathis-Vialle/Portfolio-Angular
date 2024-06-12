@@ -3,47 +3,50 @@
   <div class="content-container">
     <div class="ab-content-core">
       <app-text-img-section [imgData]="imgData">
-        Hi, I’m Mathis, a junior front-end developer living and working in
-        Toulouse, France. <br /><br />
+        Salut, je suis Mathis, un développeur front-end junior vivant et
+        travaillant à Toulouse, en France. <br /><br />
 
-        I took an interest in coding in high school and I picked up a liking in
-        design along the way through my studies. As you can see, I’m quite into
-        sober websites, as it’s more interesting to me to craft a beautiful page
-        with only a few elements. <br /><br />
+        J'ai commencé à m'intéresser au code depuis le lycée et au cours de mes
+        études j'ai aussi appris à apprécier le côté design du métier. Comme
+        vous pouvez le voir, j'aime beaucoup faire des sites au design sobre,
+        c'est pour moi plus intéressant de créer une belle page avec un nombre
+        limité d'éléments. <br /><br />
 
-        That simplicity can be found throughout my lifestyle too, I don’t need
-        much to be happy on a day to day basis, just my computer, my cat and my
-        wife. <br /><br />
+        Cette simplicité se trouve aussi dans mon style de vie, je n'ai pas
+        besoin de beaucoup pour être heureux au quotidien, just mon ordinateur,
+        mes amis, mon chat et ma femme. <br /><br />
 
-        I do think of myself as a logical and pragmatic type of person, which
-        helped me tremendously while learning programming. Even then, I’m easy
-        to approach and talk to and I’ll always do my best to either learn from
-        or help others.<br /><br />
+        Je me considère comme étant quelqu'un de pragmatique et de logique, ce
+        qui m'a beaucoup aidé au fil de mon apprentissage de la programmation.
+        Malgré tout, je reste quelqu'un de facilement abordable et je ferais
+        toujours de mon mieux pour soit aider, soit apprendre des autres.
+        <br /><br />
 
-        In my free time, I try exploring languages I haven’t thrown myself into
-        yet, I love to cook and discover cultures throughout their food (I can
-        make an incredible butter chicken according to my wife), and I love
-        reducing my lifespan by playing team based video games (of course that’s
-        a joke, I always have a blast playing them with my friends !).
+        Durant mon temps libre, j'essaie d'explorer de nouveau languages, outils
+        ou logiciels que je n'ai pas encore découvert, j'adore cuisiner et
+        découvrir des cultures au travers de leur gastronomie, et j'aime réduire
+        mon espérence de vie en jouant à des jeux vidéos multijoueurs (c'est
+        bien évidemment une blague, j'adore jouer avec mes amis pour me détendre
+        !).
       </app-text-img-section>
       <div class="ab-content-core-techs">
         <h3 class="ab-content-core-techs-title">
-          What can I bring to your company ?
+          Que puis-je apporter en entreprise ?
         </h3>
         <p class="ab-content-core-techs-subtitle">
-          Well first off, my butter chicken is on the table, but other than that
-          here’s a list of the technologies I’ve already explored and those I’m
-          currently learning :
+          Tout d'abord, je peux faire un super chili con carne (d'après ma
+          femme), et autrement voici une liste des technologies que j'ai déjà
+          exploré et celles que je suis entrain d'apprendre :
         </p>
         <div class="ab-content-core-techs-section">
           <div class="techs-section">
             <h4 class="techs-section-title">Frameworks</h4>
             <div class="techs-section-container">
-              @for (tech of frameworks$ | async; track tech.id) {
+              @for (tech of frameworks; track tech._id) {
               <div class="techs-section-container-img">
                 <img
-                  [src]="tech.icon"
-                  [alt]="tech.name + ' icon'"
+                  [src]="imageUrl(tech.icon).width(48).url()"
+                  [alt]="tech.title + ' icon'"
                   class="techs-section-container-img-icon"
                 />
                 @if(tech.learning === true) {
@@ -54,13 +57,13 @@
             </div>
           </div>
           <div class="techs-section">
-            <h4 class="techs-section-title">Languages</h4>
+            <h4 class="techs-section-title">Langages</h4>
             <div class="techs-section-container">
-              @for (tech of languages$ | async; track tech.id) {
+              @for (tech of languages; track tech._id) {
               <div class="techs-section-container-img">
                 <img
-                  [src]="tech.icon"
-                  [alt]="tech.name + ' icon'"
+                  [src]="imageUrl(tech.icon).width(48).url()"
+                  [alt]="tech.title + ' icon'"
                   class="techs-section-container-img-icon"
                 />
                 @if(tech.learning === true) {
@@ -71,13 +74,13 @@
             </div>
           </div>
           <div class="techs-section">
-            <h4 class="techs-section-title">Softwares</h4>
+            <h4 class="techs-section-title">Logiciels</h4>
             <div class="techs-section-container">
-              @for (tech of softwares$ | async; track tech.id) {
+              @for (tech of softwares; track tech._id) {
               <div class="techs-section-container-img">
                 <img
-                  [src]="tech.icon"
-                  [alt]="tech.name + ' icon'"
+                  [src]="imageUrl(tech.icon).width(48).url()"
+                  [alt]="tech.title + ' icon'"
                   class="techs-section-container-img-icon"
                 />
                 @if(tech.learning === true) {
@@ -88,8 +91,8 @@
             </div>
           </div>
           <p class="techs-section-legend">
-            The icons marked with a star* are technologies I’m currently
-            learning
+            Les icones marqués d'une astérisque* sont les technologies que je
+            suis entrain d'apprendre ou que je compte apprendre sous peu
           </p>
         </div>
       </div>

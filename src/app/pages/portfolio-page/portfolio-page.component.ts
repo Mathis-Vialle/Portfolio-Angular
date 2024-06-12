@@ -16,7 +16,7 @@ export class PortfolioPageComponent implements OnInit {
   ngOnInit(): void {
     this.portfolioScreenTitle = {
       title: 'Portfolio',
-      subtitle: 'Take a peek at a few of my projects',
+      subtitle: 'Jetez un oeil à quelques un de mes projets',
     };
   }
 }

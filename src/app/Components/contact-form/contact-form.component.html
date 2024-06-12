@@ -5,7 +5,7 @@
         type="text"
         name="firstName"
         formControlName="firstName"
-        placeholder="First name"
+        placeholder="Prénom"
         class="form-cell"
         [ngClass]="{
           'form-cell-error': f['firstName'].errors && f['firstName'].touched
@@ -20,7 +20,7 @@
         type="text"
         name="lastName"
         formControlName="lastName"
-        placeholder="Last name"
+        placeholder="Nom"
         class="form-cell"
         [ngClass]="{
           'form-cell-error': f['lastName'].errors && f['lastName'].touched
@@ -55,7 +55,7 @@
         type="text"
         name="subject"
         formControlName="subject"
-        placeholder="Subject"
+        placeholder="Sujet"
         class="form-cell"
         [ngClass]="{
           'form-cell-error': f['subject'].errors && f['subject'].touched
@@ -89,9 +89,8 @@
       contactMainForm.valid ? 'form-submit-valid' : 'form-submit-false'
     "
     class="form-submit"
-    (click)="onSubmitForm()"
     [disabled]="!contactMainForm.valid"
   >
-    @if (isLoading) { Loading... } @else { Submit }
+    @if (isLoading) { Loading... } @else { Envoyer }
   </button>
 </form>

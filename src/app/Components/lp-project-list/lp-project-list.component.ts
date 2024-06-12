@@ -1,17 +1,9 @@
 import { CommonModule } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
-import { Observable, map } from 'rxjs';
+import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
 import { ProjectListItem } from '../../models/project-list-item.model';
-import { PagesServices } from '../../services/pages.service';
 import { RouterModule } from '@angular/router';
-import {
-  animate,
-  state,
-  style,
-  transition,
-  trigger,
-} from '@angular/animations';
-import { Techs } from '../../models/techs.model';
+import { animate, style, transition, trigger } from '@angular/animations';
+import { SanityService } from '../../services/sanity.service';
 
 @Component({
   selector: 'app-lp-project-list',
@@ -30,28 +22,48 @@ import { Techs } from '../../models/techs.model';
   ],
 })
 export class LpProjectListComponent implements OnInit {
-  projects$!: Observable<ProjectListItem[]>;
+  projects: ProjectListItem[] = [];
 
-  openProject: { [key: number]: true | false } = {};
+  openProject: { [key: string]: true | false } = {};
 
-  constructor(private lpService: PagesServices) {}
+  constructor(
+    private sanityService: SanityService,
+    private cdref: ChangeDetectorRef
+  ) {}
 
-  ngOnInit(): void {
-    this.projects$ = this.lpService.getProjectList();
+  async ngOnInit(): Promise<void> {
+    await this.initProjects();
+    this.initLoop();
+  }
 
-    for (let i = 1; i <= 5; i++) {
-      this.openProject[i] = false;
+  ngAfterContentChecked() {
+    this.cdref.detectChanges();
+  }
+
+  async initProjects(): Promise<ProjectListItem[]> {
+    this.projects = await this.sanityService.getProjectList();
+
+    return this.projects;
+  }
+
+  initLoop() {
+    for (let i = 0; i < this.projects.length; i++) {
+      this.openProject[this.projects[i]._id] = false;
     }
   }
 
-  onPlusMinusClick(projectId: number) {
+  onPlusMinusClick(projectId: string) {
     if (this.openProject[projectId] === true) {
       this.openProject[projectId] = false;
     } else {
-      for (let i = 1; i <= 5; i++) {
-        this.openProject[i] = false;
+      for (let i = 0; i < this.projects.length; i++) {
+        this.openProject[this.projects[i]._id] = false;
       }
       this.openProject[projectId] = true;
     }
+  }
+
+  testLog(event: any) {
+    console.log(event);
   }
 }

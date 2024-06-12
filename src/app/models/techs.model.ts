@@ -1,7 +1,7 @@
 export class Techs {
-  id!: number;
-  name!: string;
-  icon!: string;
+  _id!: number;
+  title!: string;
+  icon!: {};
   type!: 'framework' | 'language' | 'software';
   learning!: boolean;
 }

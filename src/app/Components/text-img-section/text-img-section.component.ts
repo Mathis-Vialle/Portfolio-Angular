@@ -11,6 +11,16 @@ import { Component, Input, OnInit } from '@angular/core';
 export class TextImgSectionComponent implements OnInit {
   @Input() imgData!: { imgUrl: string; imgAlt: string };
   @Input() imgPos?: 'inverted';
+  showMore!: boolean;
+  screenWidth!: number;
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.showMore = false;
+    this.screenWidth = window.innerWidth;
+  }
+
+  showMoreFn() {
+    this.showMore = !this.showMore;
+    document.getElementById('clamped-text')!.style.display = 'block';
+  }
 }

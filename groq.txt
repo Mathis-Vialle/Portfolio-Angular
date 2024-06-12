@@ -1,0 +1,8 @@
+//Get all projects 
+*[_type == 'projects' && language == locale]
+
+//Get all projects with techsUsed details
+*[_type == 'projects' && language == locale] {
+  ...,
+  "techsUsed": techsUsed[].tech->
+}

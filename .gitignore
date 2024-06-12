@@ -43,3 +43,8 @@ Thumbs.db
 
 # Environment files
 /src/environments/*
+
+# Previous database & services
+/json-db-test
+/src/app/services/pages.service.ts
+/src/app/services/techs.service.ts

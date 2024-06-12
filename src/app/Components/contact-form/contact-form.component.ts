@@ -8,7 +8,6 @@ import {
   Validators,
 } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
-import { PagesServices } from '../../services/pages.service';
 import { tap } from 'rxjs';
 
 @Component({
@@ -22,11 +21,7 @@ export class ContactFormComponent {
   isLoading = false;
   contactMainForm!: FormGroup;
 
-  constructor(
-    private fb: FormBuilder,
-    private lpService: PagesServices,
-    private snackBar: MatSnackBar
-  ) {}
+  constructor(private fb: FormBuilder, private snackBar: MatSnackBar) {}
 
   ngOnInit(): void {
     this.initForm();
@@ -64,11 +59,11 @@ export class ContactFormComponent {
 
   getFormCtrlErrorText(ctrl: AbstractControl) {
     if (ctrl.hasError('required')) {
-      return 'This field is required';
+      return 'Ce champ est requis';
     } else if (ctrl.hasError('email') || ctrl.hasError('pattern')) {
-      return 'Please enter a valid email address';
+      return 'Veuillez entrer une adresse mail valide';
     } else {
-      return 'This field contains an error';
+      return 'Ce champ contient une erreur';
     }
   }
 
@@ -78,24 +73,24 @@ export class ContactFormComponent {
     });
   }
 
-  onSubmitForm() {
-    this.isLoading = true;
-    this.lpService
-      .sendEmail(this.contactMainForm.value)
-      .pipe(
-        tap((saved) => {
-          this.isLoading = false;
-          if (saved) {
-            this.resetForm();
-            this.openSnackBar('Email sent successfully');
-          } else {
-            console.error("Echec de l'enregistrement");
-            this.openSnackBar(
-              'There was an error while sending, please try later'
-            );
-          }
-        })
-      )
-      .subscribe();
-  }
+  // onSubmitForm() {
+  //   this.isLoading = true;
+  //   this.lpService
+  //     .sendEmail(this.contactMainForm.value)
+  //     .pipe(
+  //       tap((saved) => {
+  //         this.isLoading = false;
+  //         if (saved) {
+  //           this.resetForm();
+  //           this.openSnackBar('Email sent successfully');
+  //         } else {
+  //           console.error("Echec de l'enregistrement");
+  //           this.openSnackBar(
+  //             'There was an error while sending, please try later'
+  //           );
+  //         }
+  //       })
+  //     )
+  //     .subscribe();
+  // }
 }

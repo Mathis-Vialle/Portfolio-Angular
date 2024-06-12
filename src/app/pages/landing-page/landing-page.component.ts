@@ -15,8 +15,8 @@ export class LandingPageComponent implements OnInit {
 
   ngOnInit(): void {
     this.landingScreenTitle = {
-      title: 'Welcome',
-      subtitle: "I'm Mathis, a junior front-end developper",
+      title: 'Bienvenue',
+      subtitle: 'Je suis Mathis, un développeur front-end junior',
     };
   }
 }
