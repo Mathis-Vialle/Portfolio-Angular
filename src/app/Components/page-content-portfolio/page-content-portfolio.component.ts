@@ -17,6 +17,7 @@ export class PageContentPortfolioComponent implements OnInit {
   techDetails: { [key: string]: { name: string; text: string } } = {};
   selectedImg: { [key: string]: number } = {};
   modalImg!: string;
+  target!: string;
 
   constructor(
     private cdref: ChangeDetectorRef,
@@ -68,8 +69,13 @@ export class PageContentPortfolioComponent implements OnInit {
 
   checkLink(url: string): string {
     if (url.includes('https://') || url.includes('http://')) {
+      this.target = '_blank';
       return url;
+    } else if ((url = '/')) {
+      this.target = '_self';
+      return '/';
     } else {
+      this.target = '_blank';
       return `https://${url}`;
     }
   }

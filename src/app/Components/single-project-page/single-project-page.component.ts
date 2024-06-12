@@ -22,6 +22,7 @@ export class SingleProjectPageComponent implements OnInit {
   selectedImg!: number;
   titleScreenItem!: TitleScreenItem;
   modalImg!: string;
+  target!: string;
 
   constructor(
     private sanityService: SanityService,
@@ -78,8 +79,13 @@ export class SingleProjectPageComponent implements OnInit {
 
   checkLink(url: string): string {
     if (url.includes('https://') || url.includes('http://')) {
+      this.target = '_blank';
       return url;
+    } else if ((url = '/')) {
+      this.target = '_self';
+      return '/';
     } else {
+      this.target = '_blank';
       return `https://${url}`;
     }
   }

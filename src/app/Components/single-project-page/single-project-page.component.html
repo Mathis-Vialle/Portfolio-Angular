@@ -75,7 +75,7 @@
         </div>
         <div class="pf-content-project-core-actions">
           <button (click)="onGoBack()"><p>Voir les autres projets</p></button>
-          <a [href]="checkLink(project.projectUrl)" target="_blank">
+          <a [href]="checkLink(project.projectUrl)" [target]="target">
             <p>Visiter le site</p>
           </a>
         </div>
