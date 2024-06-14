@@ -1,4 +1,8 @@
-<form [formGroup]="contactMainForm" class="form">
+<form
+  [formGroup]="contactMainForm"
+  class="form"
+  (submit)="onSubmitForm($event)"
+>
   <div class="form-row">
     <div>
       <input

@@ -7,12 +7,14 @@ import { Techs } from '../models/techs.model';
 import { ProjectListItem } from '../models/project-list-item.model';
 import { environment } from '../../environments/environment';
 import groq from 'groq';
+import emailjs, { type EmailJSResponseStatus } from '@emailjs/browser';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Injectable({
   providedIn: 'root',
 })
 export class SanityService {
-  constructor() {}
+  constructor(private snackBar: MatSnackBar) {}
 
   sanityClientCredentials = {
     option: createClient({
@@ -68,5 +70,34 @@ export class SanityService {
             "techsRef": techsUsed[].tech->
         }`
     );
+  }
+
+  openSnackBar(message: string) {
+    this.snackBar.open(message, 'OK', {
+      duration: 2000,
+    });
+  }
+
+  sendMail(e: Event) {
+    emailjs
+      .sendForm(
+        environment.EMAIL_SERVICE_ID,
+        environment.EMAIL_TEMPLATE_ID,
+        e.target as HTMLFormElement,
+        {
+          publicKey: environment.EMAIL_PUBLIC_KEY,
+        }
+      )
+      .then(
+        () => {
+          this.openSnackBar('Email envoyé avec succés');
+        },
+        (error) => {
+          console.log('ERROR', (error as EmailJSResponseStatus).text);
+          this.openSnackBar(
+            "Une erreur empèche l'envoi de votre message, merci de réessayer plus tard"
+          );
+        }
+      );
   }
 }
