@@ -7,8 +7,7 @@ import {
   ReactiveFormsModule,
   Validators,
 } from '@angular/forms';
-import { MatSnackBar } from '@angular/material/snack-bar';
-import { tap } from 'rxjs';
+import { SanityService } from '../../services/sanity.service';
 
 @Component({
   selector: 'app-contact-form',
@@ -21,7 +20,7 @@ export class ContactFormComponent {
   isLoading = false;
   contactMainForm!: FormGroup;
 
-  constructor(private fb: FormBuilder, private snackBar: MatSnackBar) {}
+  constructor(private fb: FormBuilder, private sanityService: SanityService) {}
 
   ngOnInit(): void {
     this.initForm();
@@ -67,30 +66,8 @@ export class ContactFormComponent {
     }
   }
 
-  openSnackBar(message: string) {
-    this.snackBar.open(message, 'OK', {
-      duration: 2000,
-    });
+  onSubmitForm(e: Event) {
+    this.sanityService.sendMail(e);
+    this.resetForm();
   }
-
-  // onSubmitForm() {
-  //   this.isLoading = true;
-  //   this.lpService
-  //     .sendEmail(this.contactMainForm.value)
-  //     .pipe(
-  //       tap((saved) => {
-  //         this.isLoading = false;
-  //         if (saved) {
-  //           this.resetForm();
-  //           this.openSnackBar('Email sent successfully');
-  //         } else {
-  //           console.error("Echec de l'enregistrement");
-  //           this.openSnackBar(
-  //             'There was an error while sending, please try later'
-  //           );
-  //         }
-  //       })
-  //     )
-  //     .subscribe();
-  // }
 }

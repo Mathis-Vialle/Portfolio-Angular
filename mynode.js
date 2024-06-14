@@ -8,6 +8,9 @@ const envFile = `export const environment = {
     DATASET_NAME: '${process.env.DATASET_NAME}',
     DATASET_TOKEN: '${process.env.DATASET_TOKEN}',
     PROJECT_ID: '${process.env.PROJECT_ID}',
+    EMAIL_SERVICE_ID: '${process.env.EMAIL_SERVICE_ID}',
+    EMAIL_TEMPLATE_ID: '${process.env.EMAIL_TEMPLATE_ID}',
+    EMAIL_PUBLIC_KEY: '${process.env.EMAIL_PUBLIC_KEY}',
 };
 `;
 const targetPath = path.join(__dirname, "./src/environments/environment.ts");
