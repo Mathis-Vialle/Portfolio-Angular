@@ -145,7 +145,13 @@
 
           .info {
             display: flex;
+            @media screen and (max-width: 425px) {
+              flex-direction: column;
+            }
             align-items: baseline;
+            @media screen and (max-width: 425px) {
+              gap: 8px;
+            }
             gap: 16px;
 
             &-title {
