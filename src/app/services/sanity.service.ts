@@ -32,31 +32,31 @@ export class SanityService {
 
   async getTechs(): Promise<Techs[]> {
     return await this.sanityClientCredentials.option.fetch(
-      groq`*[_type == "techs"]`
+      groq`*[_type == "techs" && !(_id in path('drafts.**'))]`
     );
   }
 
   async getFrameworks(): Promise<Techs[]> {
     return await this.sanityClientCredentials.option.fetch(
-      groq`*[_type == "techs" && type == "framework"]`
+      groq`*[_type == "techs" && type == "framework" && !(_id in path('drafts.**'))]`
     );
   }
 
   async getLanguages(): Promise<Techs[]> {
     return await this.sanityClientCredentials.option.fetch(
-      groq`*[_type == "techs" && type == "language"]`
+      groq`*[_type == "techs" && type == "language" && !(_id in path('drafts.**'))]`
     );
   }
 
   async getSoftwares(): Promise<Techs[]> {
     return await this.sanityClientCredentials.option.fetch(
-      groq`*[_type == "techs" && type == "software"]`
+      groq`*[_type == "techs" && type == "software" && !(_id in path('drafts.**'))]`
     );
   }
 
   async getProjectList(): Promise<ProjectListItem[]> {
     return await this.sanityClientCredentials.option.fetch(
-      groq`*[_type == 'projects' && language == 'fr'] {
+      groq`*[_type == 'projects' && language == 'fr' && !(_id in path('drafts.**'))] {
             ...,
             "techsRef": techsUsed[].tech->
         }`
@@ -65,7 +65,7 @@ export class SanityService {
 
   async getProjectByName(projectName: string): Promise<ProjectListItem> {
     return await this.sanityClientCredentials.option.fetch(
-      groq`*[_type == 'projects' && title == '${projectName}'][0] {
+      groq`*[_type == 'projects' && title == '${projectName}' && !(_id in path('drafts.**'))][0] {
             ...,
             "techsRef": techsUsed[].tech->
         }`
