@@ -90,12 +90,12 @@ export class SanityService {
       )
       .then(
         () => {
-          this.openSnackBar('Email envoyé avec succés');
+          this.openSnackBar('Email envoyé avec succès');
         },
         (error) => {
           console.log('ERROR', (error as EmailJSResponseStatus).text);
           this.openSnackBar(
-            "Une erreur empèche l'envoi de votre message, merci de réessayer plus tard"
+            "Une erreur empêche l'envoi de votre message, merci de réessayer plus tard"
           );
         }
       );
